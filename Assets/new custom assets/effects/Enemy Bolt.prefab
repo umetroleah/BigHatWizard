@@ -247,6 +247,8 @@ MonoBehaviour:
   damage: 20
   impactEffect: {fileID: 8354756860449184759, guid: a3e42a10c077f514dbce0e2fb796142e,
     type: 3}
+  trailPrefab: {fileID: 5628465507796432052, guid: 79d6b3d674530674ab4bdefbdf7e7684,
+    type: 3}
 --- !u!114 &7512759472271953019
 MonoBehaviour:
   m_ObjectHideFlags: 0
