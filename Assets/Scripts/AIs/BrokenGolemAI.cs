@@ -30,7 +30,8 @@ public class BrokenGolemAI : MonoBehaviour
     public GameObject bulletPrefab;
     private Rigidbody2D m_rigidbody;
 
-
+    private MusicManager bgmManager;
+    public AudioClip bossMusic;
 
     void Start()
     {
@@ -44,6 +45,8 @@ public class BrokenGolemAI : MonoBehaviour
         }
 
         m_rigidbody = GetComponent<Rigidbody2D>();
+
+        bgmManager = FindObjectOfType<MusicManager>();
     }
 
     private void Flip()
@@ -64,6 +67,7 @@ public class BrokenGolemAI : MonoBehaviour
             {
                 //print("Activate Broken Golem Fight");
                 activeFight = true;
+                bgmManager.ChangeBGM(bossMusic);
             }
 
 

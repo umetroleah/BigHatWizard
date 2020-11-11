@@ -37,6 +37,8 @@ public class PlayerCombat : MonoBehaviour
         //Damage flash effect
         SoundManager.PlaySound("hurt");
         StartCoroutine(FlashColor());
+
+        CinemachineShake.Instance.ShakeCamera(15f, 0.4f, 0.3f);
     }
 
     IEnumerator FlashColor()
@@ -51,6 +53,9 @@ public class PlayerCombat : MonoBehaviour
         GameObject deathObject = Instantiate(deathEffect, transform.position, transform.rotation);
         deathObject.transform.localScale = transform.localScale;
         SoundManager.PlaySound("explosion");
+
+        CinemachineShake.Instance.ShakeCamera(10f, 0.6f, 0.5f);
+
         Destroy(gameObject);
 
         //run respawn script
