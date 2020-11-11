@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c357dd374a1162340b11634eead194d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0
+  delay: 0.6
 --- !u!114 &8268392463059162198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,8 +246,6 @@ MonoBehaviour:
   rb: {fileID: 7590276872787602900}
   damage: 20
   impactEffect: {fileID: 8354756860449184759, guid: a3e42a10c077f514dbce0e2fb796142e,
-    type: 3}
-  trailPrefab: {fileID: 5628465507796432052, guid: 79d6b3d674530674ab4bdefbdf7e7684,
     type: 3}
 --- !u!114 &7512759472271953019
 MonoBehaviour:
