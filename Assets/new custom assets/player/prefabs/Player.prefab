@@ -140,7 +140,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 100
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 2.7
   m_Material: {fileID: 0}
@@ -247,6 +247,8 @@ MonoBehaviour:
   dashCooldown: 0.5
   dashTrailPrefab: {fileID: 6667498523353879699, guid: 0a6f57a116519694ea972200ff569b2b,
     type: 3}
+  slowDrag: 10
+  normalDrag: 0.3
 --- !u!95 &2855060741562787745
 Animator:
   serializedVersion: 3

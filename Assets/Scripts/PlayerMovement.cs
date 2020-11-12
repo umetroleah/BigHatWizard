@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
 
     float lastStep = 0f;
 
+    public float slowDrag = 5f;
+    public float normalDrag = 1f;
+
     // Update is called once per frame
     void Update()
     {
@@ -142,6 +145,15 @@ public class PlayerMovement : MonoBehaviour
             SoundManager.PlaySound("walking");
             lastStep = Time.time;
         }
+
+
+        //Apply drag when falling
+        if (jumpHeld && fall)
+            controller.ChangeDrag(slowDrag);
+        else if (fall)
+            controller.ChangeDrag(normalDrag);
+        else
+            controller.ChangeDrag(0f);
     }
 
     public void OnLanding()

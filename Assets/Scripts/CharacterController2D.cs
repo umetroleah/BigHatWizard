@@ -83,6 +83,12 @@ public class CharacterController2D : MonoBehaviour
             }
         }
         */
+
+    }
+
+    public void ChangeDrag(float drag)
+    {
+        m_Rigidbody2D.drag = drag;
     }
 
     public void Dash(float dashSpeed)
