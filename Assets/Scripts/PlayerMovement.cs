@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float dashCooldown;
     bool dashAvailable;
     bool groundSinceDash;
+    public GameObject dashTrailPrefab;
 
     float lastStep = 0f;
 
@@ -172,6 +173,14 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             controller.Dash(dashSpeed);
+            Instantiate(dashTrailPrefab, this.transform.position, this.transform.rotation);
+            if (this.transform.rotation.y < 0)
+                dashTrailPrefab.transform.localScale = new Vector3(-1, 1, 1);
+            else
+                dashTrailPrefab.transform.localScale = new Vector3(1, 1, 1);
+            
+            dashTrailPrefab.GetComponent<Rigidbody2D>().velocity = Vector2.right * dashSpeed;
+            CinemachineShake.Instance.ShakeCamera(10f, 0.2f, 0.1f);
         }
     }
 
