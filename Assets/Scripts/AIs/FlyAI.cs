@@ -37,9 +37,10 @@ public class FlyAI : MonoBehaviour
             //If player is nearby
             if ((player.transform.position - this.transform.position).sqrMagnitude < 7 * 7)
             {
-                if (Vector2.Distance(this.transform.position, player.transform.position) > 1)
+                if (Vector2.Distance(this.transform.position, player.transform.position) > 0.5)
                 {
                     direction = player.transform.position - this.transform.position;
+                    direction = Vector3.ClampMagnitude(direction, 0.5f);
                     transform.Translate(direction * flySpeed * Time.deltaTime);
                 }
             }
