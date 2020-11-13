@@ -17,6 +17,75 @@ TextureImporter:
   - first:
       213: 1653765753878249736
     second: Magic Bolt Explosion_4
+  - first:
+      213: 3943247506773882394
+    second: Magic Bolt Explosion_0
+  - first:
+      213: 8012523537131214253
+    second: Magic Bolt Explosion_1
+  - first:
+      213: -7066816864894705392
+    second: Magic Bolt Explosion_2
+  - first:
+      213: 4084048951594376931
+    second: Magic Bolt Explosion_3
+  - first:
+      213: 7505714404381356126
+    second: Magic Bolt Explosion_4
+  - first:
+      213: -4867830140508546769
+    second: Magic Bolt Explosion_5
+  - first:
+      213: -8887018024996248589
+    second: Magic Bolt Explosion_5
+  - first:
+      213: 1626869736321971561
+    second: Magic Bolt Explosion_6
+  - first:
+      213: 7527889830447644979
+    second: Magic Bolt Explosion_7
+  - first:
+      213: 8541918061803492018
+    second: Magic Bolt Explosion_8
+  - first:
+      213: 7649314897032248494
+    second: Magic Bolt Explosion_9
+  - first:
+      213: 8501382607476998354
+    second: Magic Bolt Explosion_10
+  - first:
+      213: 2963689104499871310
+    second: Magic Bolt Explosion_11
+  - first:
+      213: 7658599419477883795
+    second: Magic Bolt Explosion_12
+  - first:
+      213: 3542086906693845357
+    second: Magic Bolt Explosion_13
+  - first:
+      213: 6428768776038025854
+    second: Magic Bolt Explosion_14
+  - first:
+      213: -93101266980344732
+    second: Magic Bolt Explosion_15
+  - first:
+      213: -7530172794590266410
+    second: Magic Bolt Explosion_16
+  - first:
+      213: -7875611574818443127
+    second: Magic Bolt Explosion_17
+  - first:
+      213: 6452000275010439003
+    second: Magic Bolt Explosion_18
+  - first:
+      213: 3960941114113975044
+    second: Magic Bolt Explosion_19
+  - first:
+      213: 3276004896147077849
+    second: Magic Bolt Explosion_20
+  - first:
+      213: 6662326680579320569
+    second: Magic Bolt Explosion_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -38,6 +107,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -72,6 +142,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -110,14 +181,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7229a35a670694260800000000000000
-      internalID: 7082297951711302183
+      spriteID: a16b3b617ba39b630800000000000000
+      internalID: 3943247506773882394
       vertices: []
       indices: 
       edges: []
@@ -131,14 +202,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0087fc724820860800000000000000
-      internalID: 7494698036417265854
+      spriteID: da5992174b3323f60800000000000000
+      internalID: 8012523537131214253
       vertices: []
       indices: 
       edges: []
@@ -147,19 +218,19 @@ TextureImporter:
       name: Magic Bolt Explosion_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fa428022fc120380800000000000000
-      internalID: -9006604478534497548
+      spriteID: 0112633c08f9ded90800000000000000
+      internalID: -7066816864894705392
       vertices: []
       indices: 
       edges: []
@@ -168,19 +239,19 @@ TextureImporter:
       name: Magic Bolt Explosion_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2499ce3eb997b6610800000000000000
-      internalID: 1615518601793280322
+      spriteID: 3eed61d12e47da830800000000000000
+      internalID: 4084048951594376931
       vertices: []
       indices: 
       edges: []
@@ -189,19 +260,61 @@ TextureImporter:
       name: Magic Bolt Explosion_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8018e9de03b53f610800000000000000
-      internalID: 1653765753878249736
+      spriteID: e50feaadb77a92860800000000000000
+      internalID: 7505714404381356126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic Bolt Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3ea931138faa480800000000000000
+      internalID: -8887018024996248589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic Bolt Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965fd49d76dc39610800000000000000
+      internalID: 1626869736321971561
       vertices: []
       indices: 
       edges: []

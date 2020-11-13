@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         SoundManager.PlaySound("hurt");
         StartCoroutine(FlashColor());
 
-        CinemachineShake.Instance.ShakeCamera(15f, 0.15f, 0.1f);
+        CinemachineShake.Instance.ShakeCamera(10f, 0.20f, 0.1f);
 
     }
     
@@ -57,6 +57,8 @@ public class Enemy : MonoBehaviour
         {
             bgmManager.ChangeBGM(newMusic);
         }
+
+        CinemachineShake.Instance.ShakeCamera(15f, 0.5f, 0.2f);
 
         Destroy(gameObject);
     }

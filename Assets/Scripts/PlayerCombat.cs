@@ -38,7 +38,7 @@ public class PlayerCombat : MonoBehaviour
         SoundManager.PlaySound("hurt");
         StartCoroutine(FlashColor());
 
-        CinemachineShake.Instance.ShakeCamera(15f, 0.4f, 0.3f);
+        CinemachineShake.Instance.ShakeCamera(15f, 0.6f, 0.3f);
     }
 
     IEnumerator FlashColor()
@@ -54,7 +54,7 @@ public class PlayerCombat : MonoBehaviour
         deathObject.transform.localScale = transform.localScale;
         SoundManager.PlaySound("explosion");
 
-        CinemachineShake.Instance.ShakeCamera(10f, 0.6f, 0.5f);
+        CinemachineShake.Instance.ShakeCamera(10f, 0.8f, 0.5f);
 
         Destroy(gameObject);
 

@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: 52388d12f543e314d84c050468b08328
+guid: 4acfbbe724b38cd4288647bb26d8b282
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5939259210333954675
-    second: SpiderSkull Jump_0
+      213: 5235323648335816338
+    second: Broken Mini Golem Charge_0
   - first:
-      213: 1316472667428976563
-    second: SpiderSkull Jump_1
+      213: -3014562027815255626
+    second: Broken Mini Golem Charge_1
   - first:
-      213: 1010591988343071060
-    second: SpiderSkull Jump_2
+      213: -777625148510276708
+    second: Broken Mini Golem Charge_2
   - first:
-      213: 629758285959682176
-    second: SpiderSkull Jump_3
+      213: 6153844694056166334
+    second: Broken Mini Golem Charge_3
   - first:
-      213: 5218000127305345611
-    second: SpiderSkull Jump_4
+      213: 4139652162393292424
+    second: Broken Mini Golem Charge_4
   - first:
-      213: -1048491544960033521
-    second: SpiderSkull Jump_5
+      213: -3552250658006583572
+    second: Broken Mini Golem Charge_5
   - first:
-      213: 4213315750688345667
-    second: SpiderSkull Jump_6
+      213: 6335970059747251078
+    second: Broken Mini Golem Charge_6
+  - first:
+      213: -3137575133679969266
+    second: Broken Mini Golem Charge_7
+  - first:
+      213: 1400622785185281305
+    second: Broken Mini Golem Charge_8
+  - first:
+      213: -8199225428090544463
+    second: Broken Mini Golem Charge_9
+  - first:
+      213: 372195321846409764
+    second: Broken Mini Golem Charge_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpiderSkull Jump_0
+      name: Broken Mini Golem Charge_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8dd31b3733839da0800000000000000
-      internalID: -5939259210333954675
+      spriteID: 2962247ce1b97a840800000000000000
+      internalID: 5235323648335816338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_1
+      name: Broken Mini Golem Charge_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 96
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b77d928aec054210800000000000000
-      internalID: 1316472667428976563
+      spriteID: 6b1c0babecf1a26d0800000000000000
+      internalID: -3014562027815255626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_2
+      name: Broken Mini Golem Charge_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 192
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4516b0e1f08560e00800000000000000
-      internalID: 1010591988343071060
+      spriteID: c9372a62c025535f0800000000000000
+      internalID: -777625148510276708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_3
+      name: Broken Mini Golem Charge_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0885cf013d95db800800000000000000
-      internalID: 629758285959682176
+      spriteID: eb3e3201529d66550800000000000000
+      internalID: 6153844694056166334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_4
+      name: Broken Mini Golem Charge_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 96
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4a6af9387f0a6840800000000000000
-      internalID: 5218000127305345611
+      spriteID: 88e312975bff27930800000000000000
+      internalID: 4139652162393292424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_5
+      name: Broken Mini Golem Charge_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 192
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +265,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0d18a8be720371f0800000000000000
-      internalID: -1048491544960033521
+      spriteID: ce6be50e8ded3bec0800000000000000
+      internalID: -3552250658006583572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiderSkull Jump_6
+      name: Broken Mini Golem Charge_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683debe2333ede750800000000000000
+      internalID: 6335970059747251078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Mini Golem Charge_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c18ec1a081574d0800000000000000
+      internalID: -3137575133679969266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Mini Golem Charge_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91579479003007310800000000000000
+      internalID: 1400622785185281305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Mini Golem Charge_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,8 +349,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e46562a54b87a30800000000000000
-      internalID: 4213315750688345667
+      spriteID: 1be105d1aef763e80800000000000000
+      internalID: -8199225428090544463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Mini Golem Charge_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42aa7b95cad4a2500800000000000000
+      internalID: 372195321846409764
       vertices: []
       indices: 
       edges: []

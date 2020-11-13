@@ -192,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
                 dashTrailPrefab.transform.localScale = new Vector3(1, 1, 1);
             
             dashTrailPrefab.GetComponent<Rigidbody2D>().velocity = Vector2.right * dashSpeed;
-            CinemachineShake.Instance.ShakeCamera(10f, 0.2f, 0.1f);
+            CinemachineShake.Instance.ShakeCamera(20f, 0.1f, 0.1f);
         }
     }
 

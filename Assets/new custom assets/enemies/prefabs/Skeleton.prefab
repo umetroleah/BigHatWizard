@@ -82,6 +82,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: -1094843053
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 6335815824895359262, guid: d90785e405d903c42a272a4b494e45ec,
+  m_Sprite: {fileID: 6335815824895359262, guid: 0009005b2bd005a4eb9d7ca010e04a8d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

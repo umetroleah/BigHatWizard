@@ -1878,75 +1878,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568551399}
   m_CullTransparentMesh: 0
---- !u!1001 &681366140
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1526318720403323447, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_Name
-      value: Broken Mini Golem
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 77.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4539de53ae4a8524d809a91905190fd5, type: 3}
 --- !u!1 &699382645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,6 +2381,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29c439558a2fb3845bef47f5d55aecdd, type: 3}
+--- !u!1001 &838956042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1526318720403323447, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_Name
+      value: Broken Mini Golem
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 77.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526318720403323450, guid: 4539de53ae4a8524d809a91905190fd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4539de53ae4a8524d809a91905190fd5, type: 3}
 --- !u!1001 &922000033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2936,7 +2936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012702696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.646225, y: -9.02625, z: -15}
+  m_LocalPosition: {x: -37.663055, y: -9.02625, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 977326088}
@@ -37095,7 +37095,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42051,6 +42050,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LinearDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855060741590370423, guid: 8dd71dca97109904fb941cc45c5ee714,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855060742437592960, guid: 8dd71dca97109904fb941cc45c5ee714,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.989
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855060742777110448, guid: 8dd71dca97109904fb941cc45c5ee714,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.622
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd71dca97109904fb941cc45c5ee714, type: 3}

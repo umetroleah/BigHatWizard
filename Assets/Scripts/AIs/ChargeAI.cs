@@ -68,7 +68,12 @@ public class ChargeAI : MonoBehaviour
             if (charging)
             {
                 //Movement for charge
-                transform.Translate(Vector2.right * speed * Time.deltaTime);
+                //transform.Translate(Vector2.right * speed * Time.deltaTime);
+                if(movingRight)
+                    this.GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+                else
+                    this.GetComponent<Rigidbody2D>().velocity = Vector2.left * speed;
+
 
                 animator.SetBool("Charging", true);
 
