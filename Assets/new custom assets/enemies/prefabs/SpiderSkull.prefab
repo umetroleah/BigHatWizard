@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7342940449315791427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundCheck_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7342940449764859524}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7342940449764859515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.55, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0.4, y: -0.25, z: 0}
   m_LocalScale: {x: -2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 7342940450885437437}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7342940450489344615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundCheck_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 7342940450885437425}
   - component: {fileID: 7342940450885437438}
   - component: {fileID: 7342940450885437439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpiderSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,12 +261,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   m_GroundPositionBack: {fileID: 7342940450489344615}
   m_GroundPositionFront: {fileID: 7342940449315791427}
-  jumpCooldown: 0.9
-  jumpHeight: 2.7
-  distance: 0.1
+  jumpCooldown: 0.7
+  jumpHeight: 2.8
+  distance: 0.2
   wallDetection: {fileID: 7342940449764859524}
 --- !u!114 &7342940450885437439
 MonoBehaviour:

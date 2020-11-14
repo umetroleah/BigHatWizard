@@ -699,10 +699,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7342940449315791426, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940449764859515, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450489344614, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_Name
       value: SpiderSkull (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -1583,6 +1608,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1721,6 +1747,26 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 32
+  m_RefResolutionX: 640
+  m_RefResolutionY: 360
+  m_UpscaleRT: 0
+  m_PixelSnapping: 1
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &519542440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,10 +2227,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7342940449315791426, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940449764859515, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450489344614, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_Name
       value: SpiderSkull (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -2199,7 +2270,7 @@ PrefabInstance:
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.569899
+      value: 12.26
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -2263,12 +2334,12 @@ PrefabInstance:
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.733707
+      value: 42.63
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.417335
+      value: 10.62
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -2319,6 +2390,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3969063545805339030, guid: 29c439558a2fb3845bef47f5d55aecdd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3969063546153757050, guid: 29c439558a2fb3845bef47f5d55aecdd,
         type: 3}
       propertyPath: m_RootOrder
@@ -2378,6 +2454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Skeleton (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969063546153757053, guid: 29c439558a2fb3845bef47f5d55aecdd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29c439558a2fb3845bef47f5d55aecdd, type: 3}
@@ -2516,6 +2597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghost (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416712756728566423, guid: 92d7b3f8c0699124c9b819a9d49bab94,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d7b3f8c0699124c9b819a9d49bab94, type: 3}
@@ -2886,6 +2972,7 @@ GameObject:
   - component: {fileID: 1012702698}
   - component: {fileID: 1012702697}
   - component: {fileID: 1012702699}
+  - component: {fileID: 1012702700}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -2936,7 +3023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012702696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.663055, y: -9.02625, z: -15}
+  m_LocalPosition: {x: -37.925, y: -9.02625, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 977326088}
@@ -2956,6 +3043,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ceeb6e67f87c94098f9d502a4c39ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1012702700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012702696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1017612776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,7 +3249,7 @@ PrefabInstance:
     - target: {fileID: 3969063546153757050, guid: 29c439558a2fb3845bef47f5d55aecdd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.89205
+      value: -5.14
       objectReference: {fileID: 0}
     - target: {fileID: 3969063546153757050, guid: 29c439558a2fb3845bef47f5d55aecdd,
         type: 3}
@@ -3419,7 +3537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1154217828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3449,8 +3567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -35495,10 +35613,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7342940449315791426, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940449764859515, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450489344614, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_Name
       value: SpiderSkull (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -35998,10 +36141,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7342940449315791426, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940449764859515, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450489344614, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_Name
       value: SpiderSkull (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342940450885437424, guid: 3c451a8114840c74491b5852c6969c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -36011,12 +36179,12 @@ PrefabInstance:
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.482338
+      value: 47.53
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.193715
+      value: 17.72
       objectReference: {fileID: 0}
     - target: {fileID: 7342940450885437437, guid: 3c451a8114840c74491b5852c6969c68,
         type: 3}
@@ -36821,6 +36989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghost (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416712756728566423, guid: 92d7b3f8c0699124c9b819a9d49bab94,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d7b3f8c0699124c9b819a9d49bab94, type: 3}
@@ -41915,12 +42088,12 @@ PrefabInstance:
     - target: {fileID: 59926874702582402, guid: 66c9e49fe4d0e2b4dab717923bbdff9b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 104.15
+      value: 105.68
       objectReference: {fileID: 0}
     - target: {fileID: 59926874702582402, guid: 66c9e49fe4d0e2b4dab717923bbdff9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.34
+      value: 25.72
       objectReference: {fileID: 0}
     - target: {fileID: 59926874702582402, guid: 66c9e49fe4d0e2b4dab717923bbdff9b,
         type: 3}
@@ -42051,6 +42224,11 @@ PrefabInstance:
       propertyPath: m_LinearDrag
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2855060741562787748, guid: 8dd71dca97109904fb941cc45c5ee714,
+        type: 3}
+      propertyPath: cooldown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2855060741590370423, guid: 8dd71dca97109904fb941cc45c5ee714,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42134,6 +42312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416712756728566423, guid: 92d7b3f8c0699124c9b819a9d49bab94,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d7b3f8c0699124c9b819a9d49bab94, type: 3}

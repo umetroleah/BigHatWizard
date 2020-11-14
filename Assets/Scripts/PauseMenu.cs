@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetButtonDown("Pause"))
         {
-            print("here");
+            //print("here");
             if (isPaused)
                 CloseMenu();
             else

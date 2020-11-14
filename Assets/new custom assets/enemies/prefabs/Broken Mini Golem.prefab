@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1526318720403323446}
   - component: {fileID: 1526318720403323453}
   - component: {fileID: 1526318720403323452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Broken Mini Golem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,8 +170,8 @@ MonoBehaviour:
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 256
-  speed: 8
-  distance: 0.25
+  speed: 10
+  distance: 0.3
   wallDetection: {fileID: 1526318720761960674}
   animator: {fileID: 1526318720403323446}
 --- !u!114 &1526318720403323452
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fedf617817521847bc81f186f8fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 250
+  health: 300
   deathEffect: {fileID: 9222726875139026461, guid: 75121d14ec125824b8fe3bf24e7807e7,
     type: 3}
   newMusic: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526318720761960674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}

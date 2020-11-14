@@ -12,13 +12,13 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dashingSound = Resources.Load<AudioClip>("Dash");
-        explosionSound = Resources.Load<AudioClip>("Explosion");
-        walkingSound = Resources.Load<AudioClip>("Step");
-        landingSound = Resources.Load<AudioClip>("Land");
-        shootingSound = Resources.Load<AudioClip>("Laser_Shoot");
-        shotExplosionSound = Resources.Load<AudioClip>("Laser_Explode");
-        hurtSound = Resources.Load<AudioClip>("Hurt");
+        dashingSound = Resources.Load<AudioClip>("dash");
+        explosionSound = Resources.Load<AudioClip>("explosion");
+        walkingSound = Resources.Load<AudioClip>("step");
+        landingSound = Resources.Load<AudioClip>("land");
+        shootingSound = Resources.Load<AudioClip>("laser_shoot");
+        shotExplosionSound = Resources.Load<AudioClip>("laser_explode");
+        hurtSound = Resources.Load<AudioClip>("hurt");
 
         audioSrc = GetComponent<AudioSource>();
     }

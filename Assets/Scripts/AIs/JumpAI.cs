@@ -65,7 +65,7 @@ public class JumpAI : MonoBehaviour
         }
 
 
-        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance);
+        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
         if (wallInfo.collider == true)
         {
             if (movingRight == true)

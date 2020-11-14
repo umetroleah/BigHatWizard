@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3969063545805339031}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3969063546153757054}
   - component: {fileID: 3969063546153756996}
   - component: {fileID: 3969063546153757051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fedf617817521847bc81f186f8fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 120
   deathEffect: {fileID: 9222726875139026461, guid: 75121d14ec125824b8fe3bf24e7807e7,
     type: 3}
   newMusic: {fileID: 0}
@@ -217,6 +217,6 @@ MonoBehaviour:
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 256
-  speed: 4
-  distance: 0.1
+  speed: 5
+  distance: 0.15
   wallDetection: {fileID: 3969063545805339031}

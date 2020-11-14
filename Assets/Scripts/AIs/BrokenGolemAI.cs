@@ -8,7 +8,7 @@ public class BrokenGolemAI : MonoBehaviour
     GameObject player;
     float lastAttack = 0f;
     private bool attacking = false;
-    private float attackCooldown = 2f;
+    public float attackCooldown = 2f;
 
     [SerializeField] private LayerMask m_GroundLayer;
     public float speed;
