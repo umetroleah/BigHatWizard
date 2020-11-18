@@ -1,16 +1,55 @@
 fileFormatVersion: 2
-guid: a933211cc23756049a00a1ce036a9836
+guid: 2bef1a2bae501e1408aea713304bdce9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6703842931480580842
-    second: BGW - Shoot_0
+      213: 6998576985476506958
+    second: BGW - Dash Emission_0
   - first:
-      213: 2585712571248560817
-    second: BGW - Shoot_1
+      213: -3131740522976061080
+    second: BGW - Dash Emission_1
   - first:
-      213: -7225213614225155987
-    second: BGW - Shoot_2
+      213: -8949152234111851010
+    second: BGW - Dash Emission_2
+  - first:
+      213: -6146349780237028721
+    second: BGW - Dash Emission_3
+  - first:
+      213: -577882169816899617
+    second: BGW - Dash Emission_4
+  - first:
+      213: -3732548133734739684
+    second: BGW - Dash Emission_5
+  - first:
+      213: -496864309614357332
+    second: BGW - Dash Emission_6
+  - first:
+      213: 7717792034837993371
+    second: BGW - Dash Emission_7
+  - first:
+      213: -4482151867293566394
+    second: BGW - Dash Emission_8
+  - first:
+      213: -2299144769955601168
+    second: BGW - Dash Emission_9
+  - first:
+      213: -7660852017975222379
+    second: BGW - Dash Emission_10
+  - first:
+      213: 6765914769890422981
+    second: BGW - Dash Emission_11
+  - first:
+      213: -5791667148641357243
+    second: BGW - Dash Emission_12
+  - first:
+      213: 4706237377953380385
+    second: BGW - Dash Emission_13
+  - first:
+      213: 5591673909532205690
+    second: BGW - Dash Emission_14
+  - first:
+      213: 6727802705410550072
+    second: BGW - Dash Emission_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,6 +71,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -66,6 +106,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -92,17 +133,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BGW - Shoot_0
+      name: BGW - Dash Emission_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61d261f4f5a27f2a0800000000000000
-      internalID: -6703842931480580842
+      spriteID: e452d8030b0ff1160800000000000000
+      internalID: 6998576985476506958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BGW - Shoot_1
+      name: BGW - Dash Emission_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba488442eb42e320800000000000000
-      internalID: 2585712571248560817
+      spriteID: 869d0574692d984d0800000000000000
+      internalID: -3131740522976061080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BGW - Shoot_2
+      name: BGW - Dash Emission_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +217,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d681bc9af72eabb90800000000000000
-      internalID: -7225213614225155987
+      spriteID: ef5aedc25793ec380800000000000000
+      internalID: -8949152234111851010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Dash Emission_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82fbab8077c3baa0800000000000000
+      internalID: -6146349780237028721
       vertices: []
       indices: 
       edges: []

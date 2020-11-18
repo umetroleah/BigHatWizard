@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 67b5ff9408a616045b27f1a446130030
+guid: 73473a82e6d622d478e8e6c89ab4e623
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5374057814976641674
-    second: Broken Golem Idle_0
+      213: -2310446743511316905
+    second: BGW - Crouch Emission_0
   - first:
-      213: 3796630102097899500
-    second: Broken Golem Idle_1
+      213: 7227213924535444330
+    second: BGW - Crouch Emission_1
   - first:
-      213: 7570085007297900795
-    second: Broken Golem Idle_2
+      213: 5319941918622931433
+    second: BGW - Crouch Emission_2
   - first:
-      213: -8910304962360827489
-    second: Broken Golem Idle_3
+      213: 954552279029878400
+    second: BGW - Crouch Emission_3
   - first:
-      213: -7936817510289639010
-    second: Broken Golem Idle_4
+      213: 8894637559967103612
+    second: BGW - Crouch Emission_4
   - first:
-      213: -4865335470299500682
-    second: Broken Golem Idle_5
+      213: 6527375032049207983
+    second: BGW - Crouch Emission_5
   - first:
-      213: -6419951663611269178
-    second: Broken Golem Idle_6
+      213: -5694802714710837499
+    second: BGW - Crouch Emission_6
   - first:
-      213: -594371106135173973
-    second: Broken Golem Idle_7
+      213: 7223717318491484527
+    second: BGW - Crouch Emission_7
+  - first:
+      213: 3627200332569759485
+    second: BGW - Crouch Emission_8
+  - first:
+      213: 9013977480588919500
+    second: BGW - Crouch Emission_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,6 +53,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -81,6 +88,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -107,11 +115,98 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broken Golem Idle_0
+      name: BGW - Crouch Emission_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756cc849de4afefd0800000000000000
+      internalID: -2310446743511316905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Crouch Emission_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6321bfd5c83c4460800000000000000
+      internalID: 7227213924535444330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Crouch Emission_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9da3d1dfa34d940800000000000000
+      internalID: 5319941918622931433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Crouch Emission_3
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 675c7e7e3e28b65b0800000000000000
-      internalID: -5374057814976641674
+      spriteID: 08e8d178d304f3d00800000000000000
+      internalID: 954552279029878400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_1
+      name: BGW - Crouch Emission_4
       rect:
         serializedVersion: 2
         x: 64
@@ -146,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cefa91366f650b430800000000000000
-      internalID: 3796630102097899500
+      spriteID: c7abfa72cb9107b70800000000000000
+      internalID: 8894637559967103612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_2
+      name: BGW - Crouch Emission_5
       rect:
         serializedVersion: 2
         x: 128
@@ -167,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf07083c4385e0960800000000000000
-      internalID: 7570085007297900795
+      spriteID: faa0c051205e59a50800000000000000
+      internalID: 6527375032049207983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_3
+      name: BGW - Crouch Emission_6
       rect:
         serializedVersion: 2
         x: 0
@@ -188,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91251678dc385480800000000000000
-      internalID: -8910304962360827489
+      spriteID: 507fab37a1ff7f0b0800000000000000
+      internalID: -5694802714710837499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_4
+      name: BGW - Crouch Emission_7
       rect:
         serializedVersion: 2
         x: 64
@@ -209,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e99f5148682cad190800000000000000
-      internalID: -7936817510289639010
+      spriteID: f61b586d0accf3460800000000000000
+      internalID: 7223717318491484527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_5
+      name: BGW - Crouch Emission_8
       rect:
         serializedVersion: 2
         x: 128
@@ -230,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67fa0bbda2bda7cb0800000000000000
-      internalID: -4865335470299500682
+      spriteID: dfecff71c77665230800000000000000
+      internalID: 3627200332569759485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Idle_6
+      name: BGW - Crouch Emission_9
       rect:
         serializedVersion: 2
         x: 0
@@ -251,29 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cfa54fe9ffb7e6a0800000000000000
-      internalID: -6419951663611269178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Broken Golem Idle_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba49e0ac0ae50c7f0800000000000000
-      internalID: -594371106135173973
+      spriteID: cc28fdfa2c4181d70800000000000000
+      internalID: 9013977480588919500
       vertices: []
       indices: 
       edges: []

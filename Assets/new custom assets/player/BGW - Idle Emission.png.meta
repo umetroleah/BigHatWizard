@@ -1,28 +1,43 @@
 fileFormatVersion: 2
-guid: f3647488eec8e9f4793f785c4f8d8861
+guid: 3ad03f1bf2c8b60459484025fd3e5d59
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4188955573737021266
-    second: Broken Golem Move_0
+      213: -2257239083917902032
+    second: BGW - Idle Emission_0
   - first:
-      213: -1692699915236538039
-    second: Broken Golem Move_1
+      213: -6744544549029732507
+    second: BGW - Idle Emission_1
   - first:
-      213: -698175933809035130
-    second: Broken Golem Move_2
+      213: 7660948220247483902
+    second: BGW - Idle Emission_2
   - first:
-      213: -7307223307341409963
-    second: Broken Golem Move_3
+      213: 6130170389757096395
+    second: BGW - Idle Emission_3
   - first:
-      213: -4867103732431937557
-    second: Broken Golem Move_4
+      213: -46880058997311693
+    second: BGW - Idle Emission_4
   - first:
-      213: 7239164702199486166
-    second: Broken Golem Move_5
+      213: -4778483528340298718
+    second: BGW - Idle Emission_5
   - first:
-      213: -7338061497679880988
-    second: Broken Golem Move_6
+      213: 4239495071722419273
+    second: BGW - Idle Emission_6
+  - first:
+      213: -9114443542414264052
+    second: BGW - Idle Emission_7
+  - first:
+      213: -5592190777628224026
+    second: BGW - Idle Emission_8
+  - first:
+      213: -5735592750984873630
+    second: BGW - Idle Emission_9
+  - first:
+      213: 5809108347995054959
+    second: BGW - Idle Emission_10
+  - first:
+      213: 5247446444261044655
+    second: BGW - Idle Emission_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,6 +59,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -78,6 +94,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -104,11 +121,98 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broken Golem Move_0
+      name: BGW - Idle Emission_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ff1f5330daca0e0800000000000000
+      internalID: -2257239083917902032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Idle Emission_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f194f77709662a0800000000000000
+      internalID: -6744544549029732507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Idle Emission_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5238e11d7215a60800000000000000
+      internalID: 7660948220247483902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Idle Emission_3
       rect:
         serializedVersion: 2
         x: 0
@@ -122,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25fdc7876e8222a30800000000000000
-      internalID: 4188955573737021266
+      spriteID: bc1f61e8d7db21550800000000000000
+      internalID: 6130170389757096395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_1
+      name: BGW - Idle Emission_4
       rect:
         serializedVersion: 2
         x: 64
@@ -143,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9490ef835625288e0800000000000000
-      internalID: -1692699915236538039
+      spriteID: 3377a60b5d2795ff0800000000000000
+      internalID: -46880058997311693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_2
+      name: BGW - Idle Emission_5
       rect:
         serializedVersion: 2
         x: 128
@@ -164,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 688f592ffa49f46f0800000000000000
-      internalID: -698175933809035130
+      spriteID: 224a8386c8a6fadb0800000000000000
+      internalID: -4778483528340298718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_3
+      name: BGW - Idle Emission_6
       rect:
         serializedVersion: 2
         x: 0
@@ -185,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551d5770e17879a90800000000000000
-      internalID: -7307223307341409963
+      spriteID: 944b8015e46b5da30800000000000000
+      internalID: 4239495071722419273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_4
+      name: BGW - Idle Emission_7
       rect:
         serializedVersion: 2
         x: 64
@@ -206,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bef9a6f31f2947cb0800000000000000
-      internalID: -4867103732431937557
+      spriteID: c097b0973edf28180800000000000000
+      internalID: -9114443542414264052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_5
+      name: BGW - Idle Emission_8
       rect:
         serializedVersion: 2
         x: 128
@@ -227,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6952121fda67460800000000000000
-      internalID: 7239164702199486166
+      spriteID: 6e5114fcd1c8462b0800000000000000
+      internalID: -5592190777628224026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Move_6
+      name: BGW - Idle Emission_9
       rect:
         serializedVersion: 2
         x: 0
@@ -248,8 +352,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ecd1d252f7f92a90800000000000000
-      internalID: -7338061497679880988
+      spriteID: 269bd3d08c41760b0800000000000000
+      internalID: -5735592750984873630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Idle Emission_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f636008b3491e9050800000000000000
+      internalID: 5809108347995054959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGW - Idle Emission_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1f0182dbca2d840800000000000000
+      internalID: 5247446444261044655
       vertices: []
       indices: 
       edges: []

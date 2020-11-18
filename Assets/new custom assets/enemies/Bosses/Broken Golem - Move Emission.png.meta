@@ -1,28 +1,34 @@
 fileFormatVersion: 2
-guid: 9563fd24dcf6c754fb6864c081347659
+guid: b6cf82b0416e2b341ba98ebb0002d2d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2851552343519563690
-    second: Broken Golem Attack 2_0
+      213: 2165609657061008509
+    second: Broken Golem - Move Emission_0
   - first:
-      213: 6206518875674217319
-    second: Broken Golem Attack 2_1
+      213: 2673186183817659737
+    second: Broken Golem - Move Emission_1
   - first:
-      213: 8144445325345861093
-    second: Broken Golem Attack 2_2
+      213: -792513922919961014
+    second: Broken Golem - Move Emission_2
   - first:
-      213: 1424350070219693435
-    second: Broken Golem Attack 2_3
+      213: 287537862834399592
+    second: Broken Golem - Move Emission_3
   - first:
-      213: -153590109194364735
-    second: Broken Golem Attack 2_4
+      213: -3833241865353453695
+    second: Broken Golem - Move Emission_4
   - first:
-      213: -8926063129160514257
-    second: Broken Golem Attack 2_5
+      213: -8727474049322449688
+    second: Broken Golem - Move Emission_5
   - first:
-      213: 8535644582503976156
-    second: Broken Golem Attack 2_6
+      213: 620718957608369729
+    second: Broken Golem - Move Emission_6
+  - first:
+      213: 2838608301960931814
+    second: Broken Golem - Move Emission_7
+  - first:
+      213: -3168713713214853194
+    second: Broken Golem - Move Emission_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,6 +50,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -78,6 +85,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -104,17 +112,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broken Golem Attack 2_0
+      name: Broken Golem - Move Emission_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650751270404d68d0800000000000000
-      internalID: -2851552343519563690
+      spriteID: d74e64b528acd0e10800000000000000
+      internalID: 2165609657061008509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_1
+      name: Broken Golem - Move Emission_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
+        x: 160
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b815ca80cf12650800000000000000
-      internalID: 6206518875674217319
+      spriteID: 9550fe8cba0191520800000000000000
+      internalID: 2673186183817659737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_2
+      name: Broken Golem - Move Emission_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
+        x: 320
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eda4dd4fd1e60170800000000000000
-      internalID: 8144445325345861093
+      spriteID: a4eedc839cc6005f0800000000000000
+      internalID: -792513922919961014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_3
+      name: Broken Golem - Move Emission_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7d5f33a7de44c310800000000000000
-      internalID: 1424350070219693435
+      spriteID: 86928bda92a8df300800000000000000
+      internalID: 287537862834399592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_4
+      name: Broken Golem - Move Emission_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 160
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c8d4740c965eddf0800000000000000
-      internalID: -153590109194364735
+      spriteID: 18f937535d69dcac0800000000000000
+      internalID: -3833241865353453695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_5
+      name: Broken Golem - Move Emission_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f250da750e0402480800000000000000
-      internalID: -8926063129160514257
+      spriteID: 8e402bf9798c1e680800000000000000
+      internalID: -8727474049322449688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem Attack 2_6
+      name: Broken Golem - Move Emission_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +280,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdc03252683b47670800000000000000
-      internalID: 8535644582503976156
+      spriteID: 14ef89d6a9c3d9800800000000000000
+      internalID: 620718957608369729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Golem - Move Emission_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e92bd60633c46720800000000000000
+      internalID: 2838608301960931814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Golem - Move Emission_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf6be89aa77604d0800000000000000
+      internalID: -3168713713214853194
       vertices: []
       indices: 
       edges: []

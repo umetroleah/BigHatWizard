@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59926874520891333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.153, y: -0.477, z: 0}
+  m_LocalPosition: {x: -1.78, y: -1.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 59926874702582402}
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9c703d4b6207d8247a293c781cd55b42, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,13 +108,13 @@ SpriteRenderer:
   m_SortingLayerID: -1094843053
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5374057814976641674, guid: 67b5ff9408a616045b27f1a446130030,
+  m_Sprite: {fileID: 5662754615659502404, guid: 818f76c64938cce4c848c885bb32d6cf,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -169,22 +169,22 @@ BoxCollider2D:
   m_GameObject: {fileID: 59926874702582415}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.52821064, y: -0.3733555}
+  m_Offset: {x: -0.5154209, y: -1.6773715}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88723564, y: 1.253289}
+  m_Size: {x: 2.0175514, y: 1.655591}
   m_EdgeRadius: 0
 --- !u!61 &59926874702582403
 BoxCollider2D:
@@ -195,22 +195,22 @@ BoxCollider2D:
   m_GameObject: {fileID: 59926874702582415}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4577818, y: -0.369833}
+  m_Offset: {x: 1.2185688, y: -1.3125}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0844364, y: 1.260334}
+  m_Size: {x: 1.4368935, y: 2.375}
   m_EdgeRadius: 0
 --- !u!114 &59926874702582407
 MonoBehaviour:
@@ -241,18 +241,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e7fbacdb9c294489acc640bc5a8d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1.5
+  attackCooldown: 2
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 256
-  speed: 3
-  distance: 0.5
+  speed: 3.5
+  distance: 0.75
   wallDetection: {fileID: 59926874520891334}
   animator: {fileID: 59926874702582400}
   activeFight: 0
   m_MeleeDisabledCollider: {fileID: 59926874702582403}
-  meleeTime: 0.833
-  rangedTime: 0.583
+  meleeTime: 0.917
+  rangedTime: 0.917
   firePoint: {fileID: 59926874520891334}
   bulletPrefab: {fileID: 5319281376899797320, guid: d90f12feae3b64349907c63e1c8d8630,
     type: 3}

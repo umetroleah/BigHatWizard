@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 818f76c64938cce4c848c885bb32d6cf
+guid: 3ae289225ab94644b8ae58b7288c050b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5662754615659502404
-    second: Broken Golem - Idle_0
+      213: -1519848962892352516
+    second: Broken Golem - Idle Emission_0
   - first:
-      213: 7394762677358228853
-    second: Broken Golem - Idle_1
+      213: -4475763949422757575
+    second: Broken Golem - Idle Emission_1
   - first:
-      213: 3091965833294901151
-    second: Broken Golem - Idle_2
+      213: -6827363702197206145
+    second: Broken Golem - Idle Emission_2
   - first:
-      213: -6286700251551364648
-    second: Broken Golem - Idle_3
+      213: 4926661124756368585
+    second: Broken Golem - Idle Emission_3
   - first:
-      213: 3536598169089792349
-    second: Broken Golem - Idle_4
+      213: -903537050455988467
+    second: Broken Golem - Idle Emission_4
   - first:
-      213: 2323467840284699805
-    second: Broken Golem - Idle_5
+      213: -3168619746042929865
+    second: Broken Golem - Idle Emission_5
   - first:
-      213: 8118475750114033812
-    second: Broken Golem - Idle_6
+      213: 4318057356623364807
+    second: Broken Golem - Idle Emission_6
   - first:
-      213: -4573024994185431146
-    second: Broken Golem - Idle_7
+      213: 968005006087323082
+    second: Broken Golem - Idle Emission_7
   - first:
-      213: -4909814657053889831
-    second: Broken Golem - Idle_8
+      213: 1970369582891811598
+    second: Broken Golem - Idle Emission_8
   - first:
-      213: -1995297681560899321
-    second: Broken Golem - Idle_9
+      213: -8096411166783292848
+    second: Broken Golem - Idle Emission_9
   - first:
-      213: 8594254207051066542
-    second: Broken Golem - Idle_10
+      213: 1880647544977523
+    second: Broken Golem - Idle Emission_10
   - first:
-      213: 4238244963385350008
-    second: Broken Golem - Idle_11
+      213: 2082515897447289312
+    second: Broken Golem - Idle Emission_11
   - first:
-      213: 232739030995983086
-    second: Broken Golem - Idle_12
+      213: 7729707585710978816
+    second: Broken Golem - Idle Emission_12
   - first:
-      213: 5079455090934755349
-    second: Broken Golem - Idle_13
+      213: -7584286619728828108
+    second: Broken Golem - Idle Emission_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -155,7 +155,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broken Golem - Idle_0
+      name: Broken Golem - Idle Emission_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,20 +163,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44b96940255269e40800000000000000
-      internalID: 5662754615659502404
+      spriteID: cf33e86bb6968eae0800000000000000
+      internalID: -1519848962892352516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_1
+      name: Broken Golem - Idle Emission_1
       rect:
         serializedVersion: 2
         x: 160
@@ -184,20 +184,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575f046d9797f9660800000000000000
-      internalID: 7394762677358228853
+      spriteID: 9393820d664e2e1c0800000000000000
+      internalID: -4475763949422757575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_2
+      name: Broken Golem - Idle Emission_2
       rect:
         serializedVersion: 2
         x: 320
@@ -205,20 +205,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9fef2f1b8ed8ea20800000000000000
-      internalID: 3091965833294901151
+      spriteID: f73c322c2e45041a0800000000000000
+      internalID: -6827363702197206145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_3
+      name: Broken Golem - Idle Emission_3
       rect:
         serializedVersion: 2
         x: 480
@@ -226,20 +226,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d90ce8fd6721c8a0800000000000000
-      internalID: -6286700251551364648
+      spriteID: 9cc64ddb0340f5440800000000000000
+      internalID: 4926661124756368585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_4
+      name: Broken Golem - Idle Emission_4
       rect:
         serializedVersion: 2
         x: 0
@@ -247,20 +247,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d59d4ed0c45841130800000000000000
-      internalID: 3536598169089792349
+      spriteID: d07aa2af6ddf573f0800000000000000
+      internalID: -903537050455988467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_5
+      name: Broken Golem - Idle Emission_5
       rect:
         serializedVersion: 2
         x: 160
@@ -268,20 +268,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ca633c0bd9e3020800000000000000
-      internalID: 2323467840284699805
+      spriteID: 73d92d8012dc604d0800000000000000
+      internalID: -3168619746042929865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_6
+      name: Broken Golem - Idle Emission_6
       rect:
         serializedVersion: 2
         x: 320
@@ -289,20 +289,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4908b236eae9aa070800000000000000
-      internalID: 8118475750114033812
+      spriteID: 7c24c4da942dceb30800000000000000
+      internalID: 4318057356623364807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_7
+      name: Broken Golem - Idle Emission_7
       rect:
         serializedVersion: 2
         x: 480
@@ -310,20 +310,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69738982ff95980c0800000000000000
-      internalID: -4573024994185431146
+      spriteID: acd72a0ac6b0f6d00800000000000000
+      internalID: 968005006087323082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_8
+      name: Broken Golem - Idle Emission_8
       rect:
         serializedVersion: 2
         x: 0
@@ -331,20 +331,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9daeb4d2595dcdbb0800000000000000
-      internalID: -4909814657053889831
+      spriteID: e03408832b8285b10800000000000000
+      internalID: 1970369582891811598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_9
+      name: Broken Golem - Idle Emission_9
       rect:
         serializedVersion: 2
         x: 160
@@ -352,20 +352,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 701f66584574f44e0800000000000000
-      internalID: -1995297681560899321
+      spriteID: 05a3060c0f4c3af80800000000000000
+      internalID: -8096411166783292848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_10
+      name: Broken Golem - Idle Emission_10
       rect:
         serializedVersion: 2
         x: 320
@@ -373,20 +373,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac6fa0caace44770800000000000000
-      internalID: 8594254207051066542
+      spriteID: 378bdd0607ea60000800000000000000
+      internalID: 1880647544977523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_11
+      name: Broken Golem - Idle Emission_11
       rect:
         serializedVersion: 2
         x: 480
@@ -394,20 +394,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8771ca9c65541da30800000000000000
-      internalID: 4238244963385350008
+      spriteID: 0e11372dc2596ec10800000000000000
+      internalID: 2082515897447289312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_12
+      name: Broken Golem - Idle Emission_12
       rect:
         serializedVersion: 2
         x: 0
@@ -415,20 +415,20 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eea52e36aeada3300800000000000000
-      internalID: 232739030995983086
+      spriteID: 007f1ff6810754b60800000000000000
+      internalID: 7729707585710978816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken Golem - Idle_13
+      name: Broken Golem - Idle Emission_13
       rect:
         serializedVersion: 2
         x: 160
@@ -436,14 +436,14 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51037bb3e79dd7640800000000000000
-      internalID: 5079455090934755349
+      spriteID: 439a05ca0833fb690800000000000000
+      internalID: -7584286619728828108
       vertices: []
       indices: 
       edges: []
@@ -457,9 +457,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 3ae289225ab94644b8ae58b7288c050b, type: 3}
-      name: _Emission
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
