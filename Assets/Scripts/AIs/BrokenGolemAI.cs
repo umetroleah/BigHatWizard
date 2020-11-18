@@ -72,7 +72,7 @@ public class BrokenGolemAI : MonoBehaviour
         if (player != null)
         {
             //Activate the fight when the player gets near
-            if ((player.transform.position - this.transform.position).sqrMagnitude < 18 * 18 && !activeFight)
+            if ((player.transform.position - this.transform.position).sqrMagnitude < 20 * 20 && !activeFight)
             {
                 //print("Activate Broken Golem Fight");
                 activeFight = true;
@@ -109,10 +109,14 @@ public class BrokenGolemAI : MonoBehaviour
                         stopMove();
                         doRanged();
                     }
+                    else
+                    {
+                        stopMove();
+                    }
                 }
                 else
                 {
-                    if ((player.transform.position - this.transform.position).sqrMagnitude < 25 * 25 && (player.transform.position - this.transform.position).sqrMagnitude > 2 * 2 && !attackingMelee && !attackingRanged)
+                    if ((player.transform.position - this.transform.position).sqrMagnitude < 36 * 36 && !attackingMelee && !attackingRanged)
                     {
                         doMove();
                     }
