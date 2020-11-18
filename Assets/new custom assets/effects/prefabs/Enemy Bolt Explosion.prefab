@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6570675423729204686}
   - component: {fileID: 546051703701906206}
   - component: {fileID: 667650541282244677}
-  - component: {fileID: -3326466965812053650}
   - component: {fileID: -7599294626259329020}
   m_Layer: 0
   m_Name: Enemy Bolt Explosion
@@ -158,18 +157,6 @@ CircleCollider2D:
   m_Offset: {x: 0.25, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &-3326466965812053650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8354756860449184759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8dc0e03b33a0243b8e626916f73930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-7599294626259329020
 MonoBehaviour:
   m_ObjectHideFlags: 0

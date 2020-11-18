@@ -10,6 +10,7 @@ public class Shot : MonoBehaviour
     public int damage = 20;
     public GameObject impactEffect;
     public GameObject trailPrefab;
+    public bool EnemyShot;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,16 @@ public class Shot : MonoBehaviour
     {
         Trail trail = hitInfo.GetComponent<Trail>();
         Weapon weapon = hitInfo.GetComponent<Weapon>();
-        if (trail == null && weapon == null)
+        Hazard hazard = hitInfo.GetComponent<Hazard>();
+        if (trail == null)
         {
-            GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
-            impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
-            SoundManager.PlaySound("shot explode");
-            Destroy(gameObject);
+            if ((!EnemyShot && weapon == null) ||  (EnemyShot && hazard == null))
+            {
+                GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
+                impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+                SoundManager.PlaySound("shot explode");
+                Destroy(gameObject);
+            }
         }
     }
 

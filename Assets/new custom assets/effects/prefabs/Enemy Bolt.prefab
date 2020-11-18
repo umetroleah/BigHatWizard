@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 7590276872787602900}
   - component: {fileID: 5319281376899797322}
   - component: {fileID: 5319281376899797323}
-  - component: {fileID: 8268392463059162198}
+  - component: {fileID: -7750121016079300460}
   - component: {fileID: 7512759472271953019}
   m_Layer: 0
   m_Name: Enemy Bolt
@@ -104,7 +104,7 @@ Transform:
   m_GameObject: {fileID: 5319281376899797320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.61, y: -5.24, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 5319281376781943290}
   m_Father: {fileID: 0}
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.6
---- !u!114 &8268392463059162198
+--- !u!114 &-7750121016079300460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,14 +240,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5319281376899797320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02001100a6e06a74794dea9ff63f42dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1afd86293a99dac4db6d108616daff61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 20
   rb: {fileID: 7590276872787602900}
-  damage: 20
+  damage: 0
   impactEffect: {fileID: 8354756860449184759, guid: a3e42a10c077f514dbce0e2fb796142e,
     type: 3}
+  trailPrefab: {fileID: 2017882034219150912, guid: 867749740288e5645ac73403f9859144,
+    type: 3}
+  EnemyShot: 1
 --- !u!114 &7512759472271953019
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class BrokenGolemAI : MonoBehaviour
 
     public Transform wallDetection;
     public Animator animator;
+    private string currentState;
 
     public bool activeFight = false;
 
@@ -32,6 +33,14 @@ public class BrokenGolemAI : MonoBehaviour
 
     private MusicManager bgmManager;
     public AudioClip bossMusic;
+
+
+    //Animation states
+    const string IDLE = "BrokenGolem_Idle";
+    const string MOVE = "BrokenGolem_Move";
+    const string MELEE = "BrokenGolem_Attack1";
+    const string RANGED = "BrokenGolem_Attack2";
+
 
     void Start()
     {
@@ -63,7 +72,7 @@ public class BrokenGolemAI : MonoBehaviour
         if (player != null)
         {
             //Activate the fight when the player gets near
-            if ((player.transform.position - this.transform.position).sqrMagnitude < 16 * 16 && !activeFight)
+            if ((player.transform.position - this.transform.position).sqrMagnitude < 18 * 18 && !activeFight)
             {
                 //print("Activate Broken Golem Fight");
                 activeFight = true;
@@ -90,23 +99,29 @@ public class BrokenGolemAI : MonoBehaviour
                 {
                     //print((player.transform.position - this.transform.position).sqrMagnitude + " " + attackingMelee + " " + attackingRanged);
                     //Choose attack based on player distance
-                    if ((player.transform.position - this.transform.position).sqrMagnitude < 5 * 5 && !attackingMelee && !attackingRanged)
+                    if ((player.transform.position - this.transform.position).sqrMagnitude < 7 * 7 && !attackingMelee && !attackingRanged)
                     {
+                        stopMove();
                         doMelee();
                     }
-                    else if ((player.transform.position - this.transform.position).sqrMagnitude < 14 * 14 && !attackingRanged)
+                    else if ((player.transform.position - this.transform.position).sqrMagnitude < 15 * 15 && !attackingRanged)
                     {
+                        stopMove();
                         doRanged();
                     }
                 }
                 else
                 {
-                    //Don't move if it hits wall
-                    RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
-                    if (wallInfo.collider == false)
+                    if ((player.transform.position - this.transform.position).sqrMagnitude < 25 * 25 && (player.transform.position - this.transform.position).sqrMagnitude > 2 * 2 && !attackingMelee && !attackingRanged)
                     {
-                        transform.Translate(Vector2.right * speed * Time.deltaTime);
-                        animator.SetFloat("Speed", m_rigidbody.velocity.x);
+                        doMove();
+                    }
+                    else
+                    {
+                        if (!attackingMelee && !attackingRanged)
+                        {
+                            stopMove();
+                        }
                     }
                 }
 
@@ -115,17 +130,17 @@ public class BrokenGolemAI : MonoBehaviour
                 if (attackingMelee && lastAttack + meleeTime < Time.time)
                 {
                     attackingMelee = false;
-                    animator.SetBool("Melee", false);
                     //Disable collider when not attacking
                     if (m_MeleeDisabledCollider != null)
                     {
                         m_MeleeDisabledCollider.enabled = false;
                     }
+                    stopMove();
                 }
                 if (attackingRanged && lastAttack + rangedTime < Time.time)
                 {
                     attackingRanged = false;
-                    animator.SetBool("Ranged", false);
+                    stopMove();
                 }
             }
 
@@ -138,10 +153,10 @@ public class BrokenGolemAI : MonoBehaviour
 
     void doMelee()
     {
-        //print("Doing Melee");
         lastAttack = Time.time;
         attackingMelee = true;
-        animator.SetBool("Melee", true);
+        //animator.SetBool("Melee", true);
+        ChangeAnimationState(MELEE);
         //Enable collider when attacking
         if (m_MeleeDisabledCollider != null)
         {
@@ -152,10 +167,45 @@ public class BrokenGolemAI : MonoBehaviour
 
     void doRanged()
     {
-        //print("Doing Ranged");
         lastAttack = Time.time;
         attackingRanged = true;
-        animator.SetBool("Ranged", true);
+        //animator.SetBool("Ranged", true);
+        ChangeAnimationState(RANGED);
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+
+    void doMove()
+    {
+        //Don't move if it hits wall
+        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
+        if (wallInfo.collider == false)
+        {
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            //animator.SetFloat("Speed", speed);
+            ChangeAnimationState(MOVE);
+        }
+        else
+        {
+            stopMove();
+        }
+
+    }
+
+    void stopMove()
+    {
+        transform.Translate(Vector2.right * 0 * Time.deltaTime);
+        //animator.SetFloat("Speed", 0);
+        ChangeAnimationState(IDLE);
+    }
+
+    void ChangeAnimationState(string newState)
+    {
+        //stop animator from changing state to current state
+        if (newState == currentState) return;
+
+        //Play animation and reassign current state
+        animator.Play(newState);
+        currentState = newState;
+    }
+
 }

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController2D controller;
     public Animator animator;
+    private string currentState;
 
     [SerializeField] public float runSpeed = 80;
     [SerializeField] public float jumpHeight = 70;
@@ -33,6 +34,16 @@ public class PlayerMovement : MonoBehaviour
     public float slowDrag = 5f;
     public float normalDrag = 1f;
 
+
+    //Animation states
+    const string IDLE = "player_idle";
+    const string WALK = "player_walk";
+    const string SHOOT = "player_shoot";
+    const string JUMP = "player_jump";
+    const string FALL = "player_fall";
+    const string CROUCH = "player_crouch";
+    const string DASH = "player_dash";
+
     // Update is called once per frame
     void Update()
     {
@@ -47,7 +58,6 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             startJump = false;
             animator.SetBool("Jumping", true);
-            //Debug.Log("Jumping");
         }
         //Stop jumping animation, unless its the beginning of the jump before leaving the ground
         else if(!startJump)
@@ -62,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
         {
             fall = true;
             animator.SetBool("Falling", true);
-            //Debug.Log("Falling");
         }
         else
         {
@@ -79,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
             startJump = true;
             controller.Jump(jumpHeight);
             animator.SetBool("Jumping", true);
-            //Debug.Log("Fall: " + controller.FallCheck() + "  Jump: " + controller.JumpCheck() + "  Ground: " + controller.GroundCheck());
         }
         if (Input.GetButtonUp("Jump"))
         {
@@ -115,7 +123,6 @@ public class PlayerMovement : MonoBehaviour
         //Check if no longer dashing
         if (dash && dashStart+dashTime < Time.time)
         {
-            //print("not dashing");
             dash = false;
             animator.SetBool("Dashing", false);
         }
@@ -129,7 +136,6 @@ public class PlayerMovement : MonoBehaviour
         //Start dashing if button is pressed, you're not already dashing, and it's become available
         if (Input.GetButtonDown("Dash") && !dash && dashAvailable)
         {
-            //print("dashing");
             dash = true;
             dashStart = Time.time;
             groundSinceDash = false;
@@ -137,17 +143,16 @@ public class PlayerMovement : MonoBehaviour
             SoundManager.PlaySound("dashing");
         }
 
+
         //Play walking sound if walking and sound wasn't made recently
-        //print((lastStep+2) + " " + (Time.time));
         if(!dash && !jump && !fall && Input.GetAxisRaw("Horizontal") != 0 && lastStep+0.3 <= Time.time)
         {
-            //print("playing");
             SoundManager.PlaySound("walking");
             lastStep = Time.time;
         }
 
 
-        //Apply drag when falling
+        //Apply drag when falling, extra drag if jump was kept held down
         if (jumpHeld && fall)
             controller.ChangeDrag(slowDrag);
         else if (fall)
@@ -164,6 +169,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("Falling", false);
         SoundManager.PlaySound("landing");
     }
+
 
     void FixedUpdate()
     {
@@ -194,6 +200,17 @@ public class PlayerMovement : MonoBehaviour
             dashTrailPrefab.GetComponent<Rigidbody2D>().velocity = Vector2.right * dashSpeed;
             CinemachineShake.Instance.ShakeCamera(20f, 0.1f, 0.1f);
         }
+    }
+
+
+    void ChangeAnimationState(string newState)
+    {
+        //stop animator from changing state to current state
+        if (newState == currentState) return;
+
+        //Play animation and reassign current state
+        animator.Play(newState);
+        currentState = newState;
     }
 
 

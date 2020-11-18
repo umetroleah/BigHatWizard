@@ -22,6 +22,10 @@ public class PlayerCombat : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        //if it doesn't do damage, do nothing
+        if (damage == 0) return;
+
+
         //Lower health
         health -= damage;
 
@@ -61,13 +65,22 @@ public class PlayerCombat : MonoBehaviour
         //run respawn script
     }
 
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        CheckHit(hitInfo);
+    }
+
     void OnTriggerStay2D(Collider2D hitInfo)
+    {
+        CheckHit(hitInfo);
+    }
+
+    void CheckHit(Collider2D hitInfo)
     {
         if (lastHit + iTime < Time.time)
         {
             Enemy enemy = hitInfo.GetComponent<Enemy>();
             Hazard hazard = hitInfo.GetComponent<Hazard>();
-            EnemyShot enemyShot = hitInfo.GetComponent<EnemyShot>();
             if (enemy != null || hazard != null)
             {
                 this.TakeDamage(20);
@@ -81,7 +94,7 @@ public class PlayerCombat : MonoBehaviour
                 {
                     m_Rigidbody2D.AddForce(new Vector2(3, 4) * knockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
                 }
-                
+
             }
 
         }
