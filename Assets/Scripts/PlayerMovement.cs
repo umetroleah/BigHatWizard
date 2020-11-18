@@ -36,20 +36,21 @@ public class PlayerMovement : MonoBehaviour
 
 
     //Animation states
-    const string IDLE = "player_idle";
-    const string WALK = "player_walk";
+    const string DASH = "player_dash";
     const string SHOOT = "player_shoot";
     const string JUMP = "player_jump";
     const string FALL = "player_fall";
     const string CROUCH = "player_crouch";
-    const string DASH = "player_dash";
+    const string WALK = "player_walk";
+    const string IDLE = "player_idle";
 
     // Update is called once per frame
     void Update()
     {
         //Set movement speed
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
 
 
         //Check if you were already jumping
@@ -57,13 +58,15 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
             startJump = false;
-            animator.SetBool("Jumping", true);
+            //animator.SetBool("Jumping", true);
+            //ChangeAnimationState(JUMP);
         }
         //Stop jumping animation, unless its the beginning of the jump before leaving the ground
         else if(!startJump)
         {
             jump = false;
-            animator.SetBool("Jumping", false);
+            //animator.SetBool("Jumping", false);
+            //ChangeAnimationState(IDLE);
         }
 
 
@@ -71,12 +74,14 @@ public class PlayerMovement : MonoBehaviour
         if (controller.FallCheck())
         {
             fall = true;
-            animator.SetBool("Falling", true);
+            //animator.SetBool("Falling", true);
+            //ChangeAnimationState(FALL);
         }
         else
         {
             fall = false;
-            animator.SetBool("Falling", false);
+            //animator.SetBool("Falling", false);
+            //ChangeAnimationState(IDLE);
         }
 
 
@@ -87,7 +92,8 @@ public class PlayerMovement : MonoBehaviour
             jumpHeld = true;
             startJump = true;
             controller.Jump(jumpHeight);
-            animator.SetBool("Jumping", true);
+            //animator.SetBool("Jumping", true);
+            //ChangeAnimationState(JUMP);
         }
         if (Input.GetButtonUp("Jump"))
         {
@@ -99,24 +105,28 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
+            //ChangeAnimationState(CROUCH);
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
+            //ChangeAnimationState(IDLE);
         }
-        animator.SetBool("Crouch", crouch);
+        //animator.SetBool("Crouch", crouch);
 
 
         //Check if player is currently shooting
         if (Input.GetButtonDown("Fire1"))
         {
             shoot = true;
-            animator.SetBool("Shooting", true);
+            //animator.SetBool("Shooting", true);
+            //ChangeAnimationState(SHOOT);
         }
         else
         {
             shoot = false;
-            animator.SetBool("Shooting", false);
+            //animator.SetBool("Shooting", false);
+            //ChangeAnimationState(IDLE);
         }
 
 
@@ -124,7 +134,8 @@ public class PlayerMovement : MonoBehaviour
         if (dash && dashStart+dashTime < Time.time)
         {
             dash = false;
-            animator.SetBool("Dashing", false);
+            //animator.SetBool("Dashing", false);
+            //ChangeAnimationState(IDLE);
         }
         //Check if you have been on ground since dash ended
         if(!groundSinceDash && !dashAvailable && !dash)
@@ -139,13 +150,32 @@ public class PlayerMovement : MonoBehaviour
             dash = true;
             dashStart = Time.time;
             groundSinceDash = false;
-            animator.SetBool("Dashing", true);
+            //animator.SetBool("Dashing", true);
+            //ChangeAnimationState(DASH);
             SoundManager.PlaySound("dashing");
         }
 
 
+        //Change animation based on variable set above
+        if (dash)
+            ChangeAnimationState(DASH);
+        else if (shoot)
+            ChangeAnimationState(SHOOT);
+        else if (jump)
+            ChangeAnimationState(JUMP);
+        else if (fall)
+            ChangeAnimationState(FALL);
+        else if (crouch)
+            ChangeAnimationState(CROUCH);
+        else if (Mathf.Abs(horizontalMove)>0)
+            ChangeAnimationState(WALK);
+        else
+            ChangeAnimationState(IDLE);
+
+
+
         //Play walking sound if walking and sound wasn't made recently
-        if(!dash && !jump && !fall && Input.GetAxisRaw("Horizontal") != 0 && lastStep+0.3 <= Time.time)
+        if (!dash && !jump && !fall && Input.GetAxisRaw("Horizontal") != 0 && lastStep+0.3 <= Time.time)
         {
             SoundManager.PlaySound("walking");
             lastStep = Time.time;
