@@ -13,11 +13,13 @@ public class PlayerCombat : MonoBehaviour
     public float knockback = 7;
     private float lastHit = 0;
 
+    public HealthBar healthBar;
 
 
     void Start()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        healthBar.SetMaxHealth(health);
     }
 
     public void TakeDamage(int damage)
@@ -28,6 +30,7 @@ public class PlayerCombat : MonoBehaviour
 
         //Lower health
         health -= damage;
+        healthBar.SetHealth(health);
 
         //Give iFrames
         lastHit = Time.time;

@@ -11,6 +11,7 @@ public class Shot : MonoBehaviour
     public GameObject impactEffect;
     public GameObject trailPrefab;
     public bool EnemyShot;
+    public bool piercing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,17 +23,20 @@ public class Shot : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Trail trail = hitInfo.GetComponent<Trail>();
-        Weapon weapon = hitInfo.GetComponent<Weapon>();
-        Hazard hazard = hitInfo.GetComponent<Hazard>();
-        if (trail == null)
+        if (!piercing)
         {
-            if ((!EnemyShot && weapon == null) ||  (EnemyShot && hazard == null))
+            Trail trail = hitInfo.GetComponent<Trail>();
+            Weapon weapon = hitInfo.GetComponent<Weapon>();
+            Hazard hazard = hitInfo.GetComponent<Hazard>();
+            if (trail == null)
             {
-                GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
-                impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
-                SoundManager.PlaySound("shot explode");
-                Destroy(gameObject);
+                if ((!EnemyShot && weapon == null) || (EnemyShot && hazard == null))
+                {
+                    GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
+                    impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+                    SoundManager.PlaySound("shot explode");
+                    Destroy(gameObject);
+                }
             }
         }
     }

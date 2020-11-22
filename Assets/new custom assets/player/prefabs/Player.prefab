@@ -388,11 +388,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 250
-  deathEffect: {fileID: 9222726875139026461, guid: 75121d14ec125824b8fe3bf24e7807e7,
+  deathEffect: {fileID: 4754320602651952871, guid: dd950941ab7493347bfa31a41067d1af,
     type: 3}
   weapon: {fileID: 2855060741562787748}
   iTime: 0.7
   knockback: 7
+  healthBar: {fileID: 0}
 --- !u!114 &2855060741562787748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,10 +412,12 @@ MonoBehaviour:
   firePointUp: {fileID: 2855060742777110448}
   firePointDown: {fileID: 2855060742437592960}
   controller: {fileID: 2855060741562786908}
-  bulletPrefab: {fileID: 3698968828396541279, guid: d2a5e8b0121c3874db7679df740e0534,
-    type: 3}
-  cooldown: 0.2
-  shotKnockback: 0.6
+  normalShot: {fileID: 0}
+  powerShot: {fileID: 0}
+  normalCooldown: 0
+  powerCooldown: 0
+  normalShotKnockback: 1
+  powerShotKnockback: 2
 --- !u!1 &2855060741590370422
 GameObject:
   m_ObjectHideFlags: 0
