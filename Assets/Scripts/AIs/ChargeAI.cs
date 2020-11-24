@@ -26,7 +26,7 @@ public class ChargeAI : MonoBehaviour
     {
         try
         {
-            player = GameObject.Find("Player");
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
         }
         catch (MissingReferenceException e)
         {

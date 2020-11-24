@@ -52,7 +52,7 @@ public class BrokeGolem : MonoBehaviour
     {
         try
         {
-            player = GameObject.Find("Player");
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
         }
         catch (MissingReferenceException e)
         {
@@ -79,7 +79,7 @@ public class BrokeGolem : MonoBehaviour
 
 
             //Face player
-            if (player.transform.position.x > this.transform.position.x)
+            if (player.transform.position.x > this.transform.position.x+1)
             {
                 if (movingRight)
                     Flip();

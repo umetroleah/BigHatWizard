@@ -38,13 +38,25 @@ public class PlayerMovement : MonoBehaviour
 
 
     //Animation states
-    const string DASH = "player_dash";
-    const string SHOOT = "player_shoot";
-    const string JUMP = "player_jump";
-    const string FALL = "player_fall";
-    const string CROUCH = "player_crouch";
-    const string WALK = "player_walk";
-    const string IDLE = "player_idle";
+    [TextArea] public string mode = "player";
+    string DASH;
+    string SHOOT;
+    string JUMP;
+    string FALL;
+    string CROUCH;
+    string WALK;
+    string IDLE;
+
+    void Start()
+    {
+        DASH = mode + "_dash";
+        SHOOT = mode + "_shoot";
+        JUMP = mode + "_jump";
+        FALL = mode + "_fall";
+        CROUCH = mode + "_crouch";
+        WALK = mode + "_walk";
+        IDLE = mode + "_idle";
+    }
 
     // Update is called once per frame
     void Update()
