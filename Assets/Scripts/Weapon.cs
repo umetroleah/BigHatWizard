@@ -37,19 +37,19 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextNormalShot)
         {
-            Shoot(normalShot, true);
+            StartCoroutine(Shoot(normalShot, true, 0f));
             nextNormalShot = Time.time + normalCooldown;
         }
 
         if (Input.GetButtonDown("Fire2") && Time.time >= nextPowerShot)
         {
-            Shoot(powerShot, false);
+            StartCoroutine(Shoot(powerShot, false, 0f));
             nextPowerShot = Time.time + powerCooldown;
             nextNormalShot = Time.time + normalCooldown;
         }
     }
 
-    void Shoot(GameObject shot, bool normal)
+    IEnumerator Shoot(GameObject shot, bool normal, float delay)
     {
         float direction = Input.GetAxisRaw("Vertical");
         bool angle = Input.GetButton("Angle");
@@ -65,9 +65,10 @@ public class Weapon : MonoBehaviour
             shotKnockback = powerShotKnockback;
         }
 
+        yield return new WaitForSeconds(delay);
         if (direction > 0)
         {
-            if(angle)
+            if (angle)
             {
                 //Shooting up angle
                 Instantiate(shot, firePointForwardUp.position, firePointForwardUp.rotation);
@@ -80,7 +81,7 @@ public class Weapon : MonoBehaviour
                 m_Rigidbody2D.AddForce(new Vector2(0, -4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
             }
         }
-        else if(direction < 0 && !grounded)
+        else if (direction < 0 && !grounded)
         {
             if (angle)
             {
@@ -94,7 +95,8 @@ public class Weapon : MonoBehaviour
                 Instantiate(shot, firePointDown.position, firePointDown.rotation);
                 m_Rigidbody2D.AddForce(new Vector2(0, 4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
             }
-        }else
+        }
+        else
         {
             //Shooting forward
             Instantiate(shot, firePointForward.position, firePointForward.rotation);
@@ -104,30 +106,6 @@ public class Weapon : MonoBehaviour
                 m_Rigidbody2D.AddForce(new Vector2(4, 0) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
         }
 
-            /*
-            if (direction > 0)
-            {
-                //Shooting up
-                Instantiate(shot, firePointUp.position, firePointUp.rotation);
-                m_Rigidbody2D.AddForce(new Vector2(0, -4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
-            }
-            else if (direction < 0 && !grounded)
-            {
-                //Shooting down from air
-                Instantiate(shot, firePointDown.position, firePointDown.rotation);
-                m_Rigidbody2D.AddForce(new Vector2(0, 4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
-            }
-            else
-            {
-                //Shooting forward
-                Instantiate(shot, firePointForward.position, firePointForward.rotation);
-                if(controller.GetDirection())
-                    m_Rigidbody2D.AddForce(new Vector2(-4, 0) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
-                else
-                    m_Rigidbody2D.AddForce(new Vector2(4, 0) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
-            }
-            */
-
-            SoundManager.PlaySound("shooting");
+        SoundManager.PlaySound("shooting");
     }
 }

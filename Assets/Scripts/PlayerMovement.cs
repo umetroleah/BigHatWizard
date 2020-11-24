@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public float runSpeed = 80;
     [SerializeField] public float jumpHeight = 70;
+    public float attackTime = 0.2f;
+    private float lastShot = 0f;
 
     float horizontalMove = 0f;
     bool jump = false;
@@ -58,15 +60,11 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
             startJump = false;
-            //animator.SetBool("Jumping", true);
-            //ChangeAnimationState(JUMP);
         }
         //Stop jumping animation, unless its the beginning of the jump before leaving the ground
         else if(!startJump)
         {
             jump = false;
-            //animator.SetBool("Jumping", false);
-            //ChangeAnimationState(IDLE);
         }
 
 
@@ -74,14 +72,10 @@ public class PlayerMovement : MonoBehaviour
         if (controller.FallCheck())
         {
             fall = true;
-            //animator.SetBool("Falling", true);
-            //ChangeAnimationState(FALL);
         }
         else
         {
             fall = false;
-            //animator.SetBool("Falling", false);
-            //ChangeAnimationState(IDLE);
         }
 
 
@@ -92,8 +86,6 @@ public class PlayerMovement : MonoBehaviour
             jumpHeld = true;
             startJump = true;
             controller.Jump(jumpHeight);
-            //animator.SetBool("Jumping", true);
-            //ChangeAnimationState(JUMP);
         }
         if (Input.GetButtonUp("Jump"))
         {
@@ -105,28 +97,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
-            //ChangeAnimationState(CROUCH);
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
-            //ChangeAnimationState(IDLE);
         }
-        //animator.SetBool("Crouch", crouch);
 
-
-        //Check if player is currently shooting
-        if (Input.GetButtonDown("Fire1"))
+        //Check if shooting
+        if (Input.GetButtonDown("Fire1") && !shoot)
         {
             shoot = true;
-            //animator.SetBool("Shooting", true);
-            //ChangeAnimationState(SHOOT);
+            lastShot = Time.time;
         }
-        else
+        else if(lastShot+attackTime < Time.time)
         {
             shoot = false;
-            //animator.SetBool("Shooting", false);
-            //ChangeAnimationState(IDLE);
         }
 
 
@@ -134,8 +119,6 @@ public class PlayerMovement : MonoBehaviour
         if (dash && dashStart+dashTime < Time.time)
         {
             dash = false;
-            //animator.SetBool("Dashing", false);
-            //ChangeAnimationState(IDLE);
         }
         //Check if you have been on ground since dash ended
         if(!groundSinceDash && !dashAvailable && !dash)

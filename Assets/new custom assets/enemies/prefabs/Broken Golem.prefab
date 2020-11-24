@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 59926874702582404}
   - component: {fileID: 59926874702582403}
   - component: {fileID: 59926874702582407}
-  - component: {fileID: 59926874702582406}
+  - component: {fileID: 2025776736}
   m_Layer: 9
   m_Name: Broken Golem
   m_TagString: Untagged
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59926874702582415}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
@@ -224,12 +224,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fedf617817521847bc81f186f8fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 700
+  health: 750
   deathEffect: {fileID: 9222726875139026461, guid: 75121d14ec125824b8fe3bf24e7807e7,
     type: 3}
   newMusic: {fileID: 0}
   changeMusicOnDeath: 1
---- !u!114 &59926874702582406
+--- !u!114 &2025776736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,21 +238,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 59926874702582415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e7fbacdb9c294489acc640bc5a8d9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7be0f2c94982e4b47b9fd7dfce4c0b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  attackCooldown: 1
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
-  speed: 3.5
+    m_Bits: 0
+  speed: 2.5
   distance: 0.75
   wallDetection: {fileID: 59926874520891334}
   animator: {fileID: 59926874702582400}
   activeFight: 0
-  m_MeleeDisabledCollider: {fileID: 59926874702582403}
+  m_MeleeDisabledCollider: {fileID: 59926874702582404}
   meleeTime: 0.917
   rangedTime: 0.917
+  moveTime: 0.75
   firePoint: {fileID: 59926874520891334}
   bulletPrefab: {fileID: 5319281376899797320, guid: d90f12feae3b64349907c63e1c8d8630,
     type: 3}
