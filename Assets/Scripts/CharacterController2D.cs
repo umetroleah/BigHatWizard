@@ -85,6 +85,17 @@ public class CharacterController2D : MonoBehaviour
         }
         */
 
+        //If the player is launched up too fast, slow them down
+        if((m_Jumping || m_Falling) && m_Rigidbody2D.velocity.y > 18)
+        {
+            //print(m_Rigidbody2D.velocity.y);
+            ChangeDrag(250);
+        }
+        else if(m_Rigidbody2D.drag>10)
+        {
+            ChangeDrag(0.1f);
+        }
+
     }
 
     public void ChangeDrag(float drag)

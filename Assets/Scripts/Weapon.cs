@@ -63,6 +63,7 @@ public class Weapon : MonoBehaviour
         else
         {
             shotKnockback = powerShotKnockback;
+            CinemachineShake.Instance.ShakeCamera(20f, 0.5f, 0.2f);
         }
 
         yield return new WaitForSeconds(delay);
