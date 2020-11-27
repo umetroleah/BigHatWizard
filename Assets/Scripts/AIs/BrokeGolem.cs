@@ -60,6 +60,7 @@ public class BrokeGolem : MonoBehaviour
         }
 
         m_rigidbody = GetComponent<Rigidbody2D>();
+        GetComponent<Enemy>().healthBar.SetActive(false);
 
         bgmManager = FindObjectOfType<MusicManager>();
     }
@@ -75,6 +76,7 @@ public class BrokeGolem : MonoBehaviour
                 //print("Activate Broken Golem Fight");
                 activeFight = true;
                 bgmManager.ChangeBGM(bossMusic);
+                GetComponent<Enemy>().healthBar.SetActive(true);
             }
 
 

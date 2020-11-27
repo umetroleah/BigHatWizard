@@ -7,6 +7,7 @@ public class HealthBar : MonoBehaviour
 {
 
     public Slider slider;
+    [SerializeField] private GameObject healthBarUI;
 
 
     public void SetMaxHealth(float maxHealth)
@@ -19,5 +20,10 @@ public class HealthBar : MonoBehaviour
     public void SetHealth(float health)
     {
         slider.value = health;
+    }
+
+    public void SetActive(bool active)
+    {
+        healthBarUI.SetActive(active);
     }
 }

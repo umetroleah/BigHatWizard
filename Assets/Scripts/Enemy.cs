@@ -13,10 +13,16 @@ public class Enemy : MonoBehaviour
     public AudioClip newMusic;
     public bool changeMusicOnDeath = false;
 
+    public HealthBar healthBar;
+
 
     void Start()
     {
         bgmManager = FindObjectOfType<MusicManager>();
+        if(healthBar != null)
+        {
+            healthBar.SetMaxHealth(health);
+        }
     }
 
 
@@ -24,7 +30,10 @@ public class Enemy : MonoBehaviour
     {
         //Lower health
         health -= damage;
-        //Debug.Log(health);
+        if(healthBar != null)
+        {
+            healthBar.SetHealth(health);
+        }
 
         //Kill if health reaches 0
         if (health <= 0)
@@ -59,6 +68,9 @@ public class Enemy : MonoBehaviour
         }
 
         CinemachineShake.Instance.ShakeCamera(15f, 0.5f, 0.2f);
+
+        if (healthBar != null)
+            Destroy(GetComponent<Enemy>().healthBar);
 
         Destroy(gameObject);
     }
