@@ -9,6 +9,10 @@ public class Parallax : MonoBehaviour
     private float startpos;
     public GameObject camera;
     public float parallax;
+    public bool scroll = false;
+    public float scrollSpeed = -0f;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +26,13 @@ public class Parallax : MonoBehaviour
     {
         float temp = (camera.transform.position.x * (1 - parallax));
         float dist = (camera.transform.position.x * parallax);
+        float newPos = 0f;
+        if (scroll)
+        {
+            newPos = Mathf.Repeat(Time.time * scrollSpeed, length);
+        }
 
-        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z) + Vector3.right * newPos;
 
         if (temp > startpos + length)
         {
