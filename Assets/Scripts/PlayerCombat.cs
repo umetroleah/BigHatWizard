@@ -19,6 +19,8 @@ public class PlayerCombat : MonoBehaviour
     void Start()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        if(healthBar == null)
+            healthBar = GameObject.FindGameObjectsWithTag("HealthBar")[0].GetComponent<HealthBar>();
         healthBar.SetMaxHealth(health);
     }
 
@@ -64,6 +66,7 @@ public class PlayerCombat : MonoBehaviour
         CinemachineShake.Instance.ShakeCamera(10f, 0.8f, 0.5f);
 
         Destroy(gameObject);
+        LevelManager.instance.Respawn();
 
         //run respawn script
     }
