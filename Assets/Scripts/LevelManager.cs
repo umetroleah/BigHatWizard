@@ -37,6 +37,10 @@ public class LevelManager : MonoBehaviour
         {
             playerPrefab = firePrefab;
             Respawn();
+        }else if (prefab == 2)
+        {
+            playerPrefab = icePrefab;
+            Respawn();
         }
         else
         {

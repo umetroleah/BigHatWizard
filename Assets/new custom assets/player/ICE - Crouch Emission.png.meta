@@ -1,0 +1,484 @@
+fileFormatVersion: 2
+guid: 2f44ce373b8dce141853116f33ce1591
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8740420858451965213
+    second: ICE - Crouch Emission_0
+  - first:
+      213: -4418821716471379525
+    second: ICE - Crouch Emission_1
+  - first:
+      213: -1884777818407268970
+    second: ICE - Crouch Emission_2
+  - first:
+      213: -8447364968313080374
+    second: ICE - Crouch Emission_3
+  - first:
+      213: 4791382766629113517
+    second: ICE - Crouch Emission_4
+  - first:
+      213: 1576806259847634990
+    second: ICE - Crouch Emission_5
+  - first:
+      213: 4532348428507408679
+    second: ICE - Crouch Emission_6
+  - first:
+      213: -4477980094538255305
+    second: ICE - Crouch Emission_7
+  - first:
+      213: -4836039832843769338
+    second: ICE - Crouch Emission_8
+  - first:
+      213: 4607150054685011131
+    second: ICE - Crouch Emission_9
+  - first:
+      213: 7925576329455360019
+    second: ICE - Crouch Emission_10
+  - first:
+      213: 3914684125274125826
+    second: ICE - Crouch Emission_11
+  - first:
+      213: 7390759638765280773
+    second: ICE - Crouch Emission_12
+  - first:
+      213: -151135540971626900
+    second: ICE - Crouch Emission_13
+  - first:
+      213: 5557791049504893547
+    second: ICE - Crouch Emission_14
+  - first:
+      213: -248851449541306884
+    second: ICE - Crouch Emission_15
+  - first:
+      213: 165205359718478252
+    second: ICE - Crouch Emission_16
+  - first:
+      213: 8950320502841436800
+    second: ICE - Crouch Emission_17
+  - first:
+      213: 1791293189227546057
+    second: ICE - Crouch Emission_18
+  - first:
+      213: 2425950047027208187
+    second: ICE - Crouch Emission_19
+  - first:
+      213: 1968733893421642726
+    second: ICE - Crouch Emission_20
+  - first:
+      213: 4081435567542494692
+    second: ICE - Crouch Emission_21
+  - first:
+      213: -5153542342183588430
+    second: ICE - Crouch Emission_22
+  - first:
+      213: 6510520524863845463
+    second: ICE - Crouch Emission_23
+  - first:
+      213: -2612343354509046844
+    second: ICE - Crouch Emission_24
+  - first:
+      213: -8241030928911416548
+    second: ICE - Crouch Emission_25
+  - first:
+      213: -3730913384877001229
+    second: ICE - Crouch Emission_26
+  - first:
+      213: -1858564298163268063
+    second: ICE - Crouch Emission_27
+  - first:
+      213: -8744567588854453810
+    second: ICE - Crouch Emission_28
+  - first:
+      213: 2471936041360275232
+    second: ICE - Crouch Emission_29
+  - first:
+      213: 7265003659224000733
+    second: ICE - Crouch Emission_30
+  - first:
+      213: 5772375960529256520
+    second: ICE - Crouch Emission_31
+  - first:
+      213: 3677368316088389382
+    second: ICE - Crouch Emission_32
+  - first:
+      213: 7443812976249002575
+    second: ICE - Crouch Emission_33
+  - first:
+      213: 3362895233699130488
+    second: ICE - Crouch Emission_34
+  - first:
+      213: -5656917800375316281
+    second: ICE - Crouch Emission_35
+  - first:
+      213: 7929922717491360587
+    second: ICE - Crouch Emission_36
+  - first:
+      213: -6671843333378715024
+    second: ICE - Crouch Emission_37
+  - first:
+      213: -8720982887304135916
+    second: ICE - Crouch Emission_38
+  - first:
+      213: -1108832849734873373
+    second: ICE - Crouch Emission_39
+  - first:
+      213: -468081883830695801
+    second: ICE - Crouch Emission_40
+  - first:
+      213: 1906130606273174421
+    second: ICE - Crouch Emission_41
+  - first:
+      213: -7705178667682527891
+    second: ICE - Crouch Emission_42
+  - first:
+      213: -8489637997901016442
+    second: ICE - Crouch Emission_43
+  - first:
+      213: 7688214867443252834
+    second: ICE - Crouch Emission_44
+  - first:
+      213: 3786876591790568110
+    second: ICE - Crouch Emission_45
+  - first:
+      213: 5746197509094324723
+    second: ICE - Crouch Emission_46
+  - first:
+      213: 4136726024606500091
+    second: ICE - Crouch Emission_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea4e88b989c3b680800000000000000
+      internalID: -8740420858451965213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb901ff8f013da2c0800000000000000
+      internalID: -4418821716471379525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d8c456f8ce7d5e0800000000000000
+      internalID: -1884777818407268970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5be9f315ee4ca80800000000000000
+      internalID: -8447364968313080374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae4bdb8d396e7240800000000000000
+      internalID: 4791382766629113517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20a4d560f0f1e510800000000000000
+      internalID: 1576806259847634990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729eb7fd1e226ee30800000000000000
+      internalID: 4532348428507408679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734f6c154d40bd1c0800000000000000
+      internalID: -4477980094538255305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a25bbf46fe2ecb0800000000000000
+      internalID: -4836039832843769338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICE - Crouch Emission_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbceb64a092efef30800000000000000
+      internalID: 4607150054685011131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
