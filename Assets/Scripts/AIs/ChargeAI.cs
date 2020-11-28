@@ -24,6 +24,11 @@ public class ChargeAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindPlayer();
+    }
+
+    private void FindPlayer()
+    {
         try
         {
             player = GameObject.FindGameObjectsWithTag("Player")[0];
@@ -42,6 +47,8 @@ public class ChargeAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        FindPlayer();
+
         var direction = Vector2.zero;
         if (player != null)
         {

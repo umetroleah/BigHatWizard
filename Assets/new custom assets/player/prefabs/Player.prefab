@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 2855060741562787748}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,11 +413,13 @@ MonoBehaviour:
   firePointUp: {fileID: 2855060742777110448}
   firePointDown: {fileID: 2855060742437592960}
   controller: {fileID: 2855060741562786908}
-  normalShot: {fileID: 0}
-  powerShot: {fileID: 0}
-  normalCooldown: 0
-  powerCooldown: 0
-  normalShotKnockback: 1
+  normalShot: {fileID: 3698968828396541279, guid: d2a5e8b0121c3874db7679df740e0534,
+    type: 3}
+  powerShot: {fileID: 1300691604139161049, guid: aefd9cdce21620a46b50941ee74c3e6f,
+    type: 3}
+  normalCooldown: 0.25
+  powerCooldown: 1
+  normalShotKnockback: 0.5
   powerShotKnockback: 2
 --- !u!1 &2855060741590370422
 GameObject:

@@ -50,6 +50,16 @@ public class BrokeGolem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindPlayer();
+
+        m_rigidbody = GetComponent<Rigidbody2D>();
+        GetComponent<Enemy>().healthBar.SetActive(false);
+
+        bgmManager = FindObjectOfType<MusicManager>();
+    }
+
+    private void FindPlayer()
+    {
         try
         {
             player = GameObject.FindGameObjectsWithTag("Player")[0];
@@ -58,15 +68,12 @@ public class BrokeGolem : MonoBehaviour
         {
             player = null;
         }
-
-        m_rigidbody = GetComponent<Rigidbody2D>();
-        GetComponent<Enemy>().healthBar.SetActive(false);
-
-        bgmManager = FindObjectOfType<MusicManager>();
     }
 
     void FixedUpdate()
     {
+        FindPlayer();
+
         var direction = Vector2.zero;
         if (player != null)
         {

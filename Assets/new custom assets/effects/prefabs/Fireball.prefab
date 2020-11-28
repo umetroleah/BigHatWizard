@@ -169,12 +169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afd86293a99dac4db6d108616daff61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 27
   rb: {fileID: 6137713777128904637}
-  damage: 35
-  impactEffect: {fileID: 4221133498822606540, guid: 0ac2085ac0438aa428ed3dc45072ab1e,
+  damage: 15
+  impactEffect: {fileID: 4763307031634579129, guid: 67d369c37c1306b4c912e9ee54c6293a,
     type: 3}
-  trailPrefab: {fileID: 2017882034219150912, guid: 867749740288e5645ac73403f9859144,
+  trailPrefab: {fileID: 5698507002852631965, guid: 4692a73b660b220438f0886ae0d55aaf,
     type: 3}
   EnemyShot: 0
   piercing: 0

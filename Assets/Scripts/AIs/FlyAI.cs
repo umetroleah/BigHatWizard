@@ -13,11 +13,16 @@ public class FlyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindPlayer();
+    }
+
+    private void FindPlayer()
+    {
         try
         {
             player = GameObject.FindGameObjectsWithTag("Player")[0];
         }
-        catch(MissingReferenceException e)
+        catch (MissingReferenceException e)
         {
             player = null;
         }
@@ -31,6 +36,8 @@ public class FlyAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        FindPlayer();
+
         var direction = Vector2.zero;
         if (player != null)
         {

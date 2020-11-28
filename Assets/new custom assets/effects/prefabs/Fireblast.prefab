@@ -172,9 +172,9 @@ MonoBehaviour:
   speed: 0
   rb: {fileID: 1584364342382903989}
   damage: 100
-  impactEffect: {fileID: 4221133498822606540, guid: 0ac2085ac0438aa428ed3dc45072ab1e,
+  impactEffect: {fileID: 4763307031634579129, guid: 67d369c37c1306b4c912e9ee54c6293a,
     type: 3}
-  trailPrefab: {fileID: 2017882034219150912, guid: 867749740288e5645ac73403f9859144,
+  trailPrefab: {fileID: 5698507002852631965, guid: 4692a73b660b220438f0886ae0d55aaf,
     type: 3}
   EnemyShot: 0
   piercing: 1
