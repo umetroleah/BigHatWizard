@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8080170246228732822}
   - component: {fileID: 3105209875143580106}
   - component: {fileID: 4861610003933789896}
+  - component: {fileID: -7914265958219049342}
   m_Layer: 0
   m_Name: Ice Spike
   m_TagString: Untagged
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   rb: {fileID: 5811190138307106569}
-  damage: 25
+  damage: 20
   impactEffect: {fileID: 7054024606995535308, guid: 2a888b99f793d9c4d813b79e40766b3f,
     type: 3}
   trailPrefab: {fileID: 2541826514106861275, guid: 7640bb0071f96a34489a3ba1efae5ad3,
@@ -188,3 +189,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &-7914265958219049342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8080170246228732821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectCode: 2
+  intensity: 3
+  countdown: 0
+  duration: 5

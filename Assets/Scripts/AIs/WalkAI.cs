@@ -16,8 +16,10 @@ public class WalkAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float speedMult = this.GetComponent<Enemy>().speedMult;
+
         //Move to the right
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * speedMult * Time.deltaTime);
         
         //Change direction if it hits a wall
         RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);

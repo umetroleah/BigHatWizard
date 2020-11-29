@@ -171,9 +171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   rb: {fileID: 1428369156762839491}
-  damage: 20
+  damage: 25
   impactEffect: {fileID: 4221133498822606540, guid: 0ac2085ac0438aa428ed3dc45072ab1e,
     type: 3}
   trailPrefab: {fileID: 2017882034219150912, guid: 867749740288e5645ac73403f9859144,
     type: 3}
   EnemyShot: 0
+  piercing: 0

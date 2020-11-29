@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8478726181798193955}
   - component: {fileID: 8478726181798193954}
   - component: {fileID: 3359438348215228798}
+  - component: {fileID: 4073015559107756193}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -178,3 +179,20 @@ MonoBehaviour:
     type: 3}
   EnemyShot: 0
   piercing: 0
+--- !u!114 &4073015559107756193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478726181798193953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 0}
+  effectCode: 1
+  intensity: 5
+  countdown: 1
+  duration: 5

@@ -14,7 +14,14 @@ public class Enemy : MonoBehaviour
     public bool changeMusicOnDeath = false;
 
     public HealthBar healthBar;
+    public float speedMult = 1f;
 
+    public ArrayList effects = new ArrayList();
+    //Arraylist of arrays to hold effect. {effect, intensity, countdown, duration}
+    // 0 - default effect
+    // 1 - burn
+    // 2 - slow
+    // 3 - freeze
 
     void Start()
     {
@@ -22,6 +29,86 @@ public class Enemy : MonoBehaviour
         if(healthBar != null)
         {
             healthBar.SetMaxHealth(health);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        ArrayList tempList = new ArrayList();
+
+        foreach(float[] effect in effects)
+        {
+            //burn effect
+            if(effect[0] == 1f)
+            {
+
+                //countdown to next damage tick
+                effect[2] -= Time.deltaTime;
+
+                //Take damage when countdown runs out and reset countdown
+                if (effect[2] <= 0f)
+                {
+                    this.TakeDamage((int)Math.Round(effect[1]));
+                    effect[2] += 1f;
+                }
+
+                //Color for burning
+                GetComponent<SpriteRenderer>().color = new Color(1f, 0.5f, 0.1f, 1f);
+
+
+                effect[3] -= Time.deltaTime;
+                if (effect[3] <= 0)
+                {
+                    GetComponent<SpriteRenderer>().color = Color.white;
+                    tempList.Add(effect);
+                }
+            }
+
+            //slow effect
+            if (effect[0] == 2f)
+            {
+
+                //Change speedmult
+                speedMult = 1 / effect[1];
+
+                //Color for slowed
+                GetComponent<SpriteRenderer>().color = new Color(0.1f, 0.4f, 0.8f, 1f);
+
+
+                effect[3] -= Time.deltaTime;
+                if (effect[3] <= 0)
+                {
+                    GetComponent<SpriteRenderer>().color = Color.white;
+                    speedMult = 1f;
+                    tempList.Add(effect);
+                }
+            }
+
+            //Freeze effect
+            if (effect[0] == 3f)
+            {
+
+                //Change speedmult
+                speedMult = 0f;
+
+                //Color for frozen
+                GetComponent<SpriteRenderer>().color = new Color(0.1f, 0.3f, 0.7f, 1f);
+
+
+                effect[3] -= Time.deltaTime;
+                if (effect[3] <= 0)
+                {
+                    GetComponent<SpriteRenderer>().color = Color.white;
+                    speedMult = 1f;
+                    tempList.Add(effect);
+                }
+            }
+
+        }
+
+        foreach(float[] remove in tempList)
+        {
+            effects.Remove(remove);
         }
     }
 
@@ -78,9 +165,15 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Shot shot = hitInfo.GetComponent<Shot>();
+        Effect effect = hitInfo.GetComponent<Effect>();
         if (shot != null)
         {
             this.TakeDamage(shot.damage);
+
+            if(effect != null)
+            {
+                effects.Add(new float[] {effect.effectCode, effect.intensity, effect.countdown, effect.duration});
+            }
         }
     }
 }

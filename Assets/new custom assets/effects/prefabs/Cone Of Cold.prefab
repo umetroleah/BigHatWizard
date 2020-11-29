@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4795112030959511834}
   - component: {fileID: 4795112030959511835}
   - component: {fileID: 1855143392482696007}
+  - component: {fileID: 5267609763511623456}
   m_Layer: 0
   m_Name: Cone Of Cold
   m_TagString: Untagged
@@ -171,13 +172,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   rb: {fileID: 7065125679710573956}
-  damage: 50
+  damage: 25
   impactEffect: {fileID: 4221133498822606540, guid: 0ac2085ac0438aa428ed3dc45072ab1e,
     type: 3}
   trailPrefab: {fileID: 2017882034219150912, guid: 867749740288e5645ac73403f9859144,
     type: 3}
   EnemyShot: 0
   piercing: 1
+--- !u!114 &5267609763511623456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795112030959511832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectCode: 3
+  intensity: 0
+  countdown: 0
+  duration: 3
 --- !u!1 &5802699981317339814
 GameObject:
   m_ObjectHideFlags: 0

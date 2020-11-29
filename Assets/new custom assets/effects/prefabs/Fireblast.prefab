@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6291453001404008065}
   - component: {fileID: 6291453001404008064}
   - component: {fileID: 899269401169327324}
+  - component: {fileID: 5207939970962489946}
   m_Layer: 0
   m_Name: Fireblast
   m_TagString: Untagged
@@ -202,10 +203,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   rb: {fileID: 8631233936039148063}
-  damage: 100
+  damage: 75
   impactEffect: {fileID: 4763307031634579129, guid: 67d369c37c1306b4c912e9ee54c6293a,
     type: 3}
   trailPrefab: {fileID: 5698507002852631965, guid: 4692a73b660b220438f0886ae0d55aaf,
     type: 3}
   EnemyShot: 0
   piercing: 1
+--- !u!114 &5207939970962489946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291453001404008067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectCode: 1
+  intensity: 5
+  countdown: 1
+  duration: 10

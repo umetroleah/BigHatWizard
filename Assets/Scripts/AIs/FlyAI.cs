@@ -36,6 +36,7 @@ public class FlyAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        float speedMult = this.GetComponent<Enemy>().speedMult;
         FindPlayer();
 
         var direction = Vector2.zero;
@@ -48,7 +49,7 @@ public class FlyAI : MonoBehaviour
                 {
                     direction = player.transform.position - this.transform.position;
                     direction = Vector3.ClampMagnitude(direction, 0.5f);
-                    transform.Translate(direction * flySpeed * Time.deltaTime);
+                    transform.Translate(direction * flySpeed * speedMult * Time.deltaTime);
                 }
             }
             else
