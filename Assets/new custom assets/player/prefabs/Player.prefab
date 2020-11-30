@@ -417,7 +417,7 @@ MonoBehaviour:
     type: 3}
   powerShot: {fileID: 1300691604139161049, guid: aefd9cdce21620a46b50941ee74c3e6f,
     type: 3}
-  normalCooldown: 0.2
+  normalCooldown: 0.25
   powerCooldown: 1
   normalShotKnockback: 0.5
   powerShotKnockback: 2

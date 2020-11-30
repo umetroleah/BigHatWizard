@@ -32,7 +32,8 @@ public class BrokeGolem : MonoBehaviour
     private bool moving = false;
     private bool moveState = false;
 
-    public Transform firePoint;
+    public Transform firePointHigh;
+    public Transform firePointLow;
 
     public GameObject bulletPrefab;
     private Rigidbody2D m_rigidbody;
@@ -46,6 +47,7 @@ public class BrokeGolem : MonoBehaviour
     const string MOVE = "BrokenGolem_Move";
     const string MELEE = "BrokenGolem_Attack1";
     const string RANGED = "BrokenGolem_Attack2";
+    const string LOW = "BrokenGolem_Attack3";
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +112,9 @@ public class BrokeGolem : MonoBehaviour
 
     void FightLoop()
     {
+        //Generate random number to determine action
+        float rng = Random.value;
+
         //Check if attacks and movements are done. If so, switch to idle. If attack is done, start attack cooldown
         if (attackingMelee && lastAttack + meleeTime < Time.time)
         {
@@ -140,7 +145,13 @@ public class BrokeGolem : MonoBehaviour
         //If attack cooldowns have run out and last movement has completed
         if (lastAttack + attackCooldown < Time.time && !moveState && !attacking)
         {
-            if ((player.transform.position - this.transform.position).sqrMagnitude < 8 * 8 && !attackingMelee && !attackingRanged)
+            if(rng <= 0.35)
+            {
+                //Small chance to move closer no matter where the player is
+                StopMove();
+                StartCoroutine(DoMove());
+            }
+            else if ((player.transform.position - this.transform.position).sqrMagnitude < 7 * 7 && !attackingMelee && !attackingRanged)
             {
                 //If close do melee
                 StopMove();
@@ -185,10 +196,23 @@ public class BrokeGolem : MonoBehaviour
 
     IEnumerator DoRanged()
     {
+        //50 50 chance of high or low attack
+        float rng = Random.value;
+        Transform firePoint;
+        if (rng <= 0.5f)
+        {
+            firePoint = firePointHigh;
+            ChangeAnimationState(RANGED);
+        }
+        else
+        {
+            firePoint = firePointLow;
+            ChangeAnimationState(LOW);
+        }
+
         //Change animation state and variables
         lastAttack = Time.time;
         attackingRanged = true;
-        ChangeAnimationState(RANGED);
 
         //Create bullet after delay
         yield return new WaitForSeconds(0.583f);

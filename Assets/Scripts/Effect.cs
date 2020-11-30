@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Effect : MonoBehaviour
 {
-    public float effectCode = 0f;
-    public float intensity = 0f;
-    public float countdown = 0f;
-    public float duration = 0f;
+    public static float effectCode = 0f;
+    public static float intensity = 0f;
+    public static float countdown = 0f;
+    public static float duration = 0f;
+    public float[] effectArr = { effectCode, intensity, countdown, duration };
 }

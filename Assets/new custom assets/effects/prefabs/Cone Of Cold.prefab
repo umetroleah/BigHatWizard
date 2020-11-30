@@ -191,10 +191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectCode: 3
-  intensity: 0
-  countdown: 0
-  duration: 3
+  effectArr:
+  - 3
+  - 0
+  - 0
+  - 2
 --- !u!1 &5802699981317339814
 GameObject:
   m_ObjectHideFlags: 0

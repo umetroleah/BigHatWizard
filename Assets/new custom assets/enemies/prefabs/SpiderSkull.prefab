@@ -280,8 +280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fedf617817521847bc81f186f8fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 60
   deathEffect: {fileID: 9222726875139026461, guid: 75121d14ec125824b8fe3bf24e7807e7,
     type: 3}
   newMusic: {fileID: 0}
   changeMusicOnDeath: 0
+  healthBar: {fileID: 0}
+  speedMult: 1

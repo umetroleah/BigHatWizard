@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
             //burn effect
             if(effect[0] == 1f)
             {
-
+                
                 //countdown to next damage tick
                 effect[2] -= Time.deltaTime;
 
@@ -162,6 +162,21 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void AddEffect(float[] newEffect)
+    {
+        foreach(float[] effect in effects)
+        {
+            if (newEffect[0] == effect[0])
+            {
+                effects.Add(newEffect);
+                effects.Remove(effect);
+                return;
+            }
+        }
+
+        effects.Add(newEffect);
+    }
+
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Shot shot = hitInfo.GetComponent<Shot>();
@@ -172,7 +187,7 @@ public class Enemy : MonoBehaviour
 
             if(effect != null)
             {
-                effects.Add(new float[] {effect.effectCode, effect.intensity, effect.countdown, effect.duration});
+                AddEffect(effect.effectArr);
             }
         }
     }

@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad2cac361107c640a7fc893fab1c17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 0}
-  effectCode: 1
-  intensity: 5
-  countdown: 1
-  duration: 5
+  effectArr:
+  - 1
+  - 5
+  - 1
+  - 5
