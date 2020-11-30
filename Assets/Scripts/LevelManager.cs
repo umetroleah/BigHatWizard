@@ -17,9 +17,12 @@ public class LevelManager : MonoBehaviour
     public GameObject firePrefab;
     public GameObject icePrefab;
 
+    public int currentPrefab;
+
     public void Awake()
     {
         instance = this;
+        currentPrefab = 0;
     }
 
     public void Respawn()
@@ -36,18 +39,56 @@ public class LevelManager : MonoBehaviour
         if (prefab == 1)
         {
             playerPrefab = firePrefab;
-            Respawn();
         }else if (prefab == 2)
         {
             playerPrefab = icePrefab;
-            Respawn();
         }
         else
         {
             playerPrefab = defualtPrefab;
-            Respawn();
         }
 
+        currentPrefab = prefab;
+        Respawn();
+    }
+
+    public void SwapPrefab(int prefab)
+    {
+        GameObject currentPlayer = GameObject.FindGameObjectsWithTag("Player")[0];
+        Transform playerPosition = currentPlayer.transform;
+
+        if (prefab == 1)
+        {
+            playerPrefab = firePrefab;
+        }
+        else if (prefab == 2)
+        {
+            playerPrefab = icePrefab;
+        }
+        else
+        {
+            playerPrefab = defualtPrefab;
+        }
+
+        currentPrefab = prefab;
+        GameObject newPlayer = Instantiate(playerPrefab, playerPosition.position, playerPosition.rotation);
+        vcam.m_Follow = newPlayer.transform;
+        vcam.Follow = newPlayer.transform;
+
+        newPlayer.GetComponent<CharacterController2D>().m_FacingRight = currentPlayer.GetComponent<CharacterController2D>().m_FacingRight;
+        Destroy(currentPlayer);
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetButtonDown("ModeUp"))
+        {
+            SwapPrefab((currentPrefab + 1) % 3);
+        }
+        if (Input.GetButtonDown("ModeDown"))
+        {
+            SwapPrefab((currentPrefab + 2) % 3);
+        }
     }
 
 }
