@@ -218,7 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 257
   speed: 5
-  distance: 0.15
+  distance: 0.09
+  m_rigidbody2D: {fileID: 3969063546153757055}
   wallDetection: {fileID: 3969063545805339031}

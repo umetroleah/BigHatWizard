@@ -13,7 +13,7 @@ public class BrokeGolem : MonoBehaviour
     [SerializeField] private LayerMask m_GroundLayer;
     public float speed;
     public float distance;
-    private bool movingRight = false;
+    private bool movingRight = true;
 
     public Transform wallDetection;
     public Animator animator;
@@ -90,12 +90,12 @@ public class BrokeGolem : MonoBehaviour
 
 
             //Face player
-            if (player.transform.position.x > this.transform.position.x+1)
+            if (player.transform.position.x < this.transform.position.x + 1.5f)
             {
                 if (movingRight)
                     Flip();
             }
-            else
+            else if (player.transform.position.x + 1.5f > this.transform.position.x)
             {
                 if (!movingRight)
                     Flip();
@@ -151,7 +151,7 @@ public class BrokeGolem : MonoBehaviour
                 StopMove();
                 StartCoroutine(DoMove());
             }
-            else if ((player.transform.position - this.transform.position).sqrMagnitude < 7 * 7 && !attackingMelee && !attackingRanged)
+            else if ((player.transform.position - this.transform.position).sqrMagnitude < 6 * 6 && !attackingMelee && !attackingRanged)
             {
                 //If close do melee
                 StopMove();
@@ -173,7 +173,11 @@ public class BrokeGolem : MonoBehaviour
 
         if (moving)
         {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            if (movingRight)
+                m_rigidbody.velocity = new Vector2(speed, 0);
+            else
+                m_rigidbody.velocity = new Vector2(-speed, 0);
+            //transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
     }
 
@@ -222,7 +226,12 @@ public class BrokeGolem : MonoBehaviour
     IEnumerator DoMove()
     {
         //Change animation state and some variables, if not too close to a wall
-        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
+        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.left, distance, m_GroundLayer);
+        //Debug.DrawRay(wallDetection.position, Vector2.left*distance, Color.red, 10f, false);
+
+        if (movingRight)
+            wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
+
         if (wallInfo.collider == false)
         {
             lastMove = Time.time;
@@ -243,7 +252,8 @@ public class BrokeGolem : MonoBehaviour
 
     void StopMove()
     {
-        transform.Translate(Vector2.right * 0 * Time.deltaTime);
+        //transform.Translate(Vector2.right * 0 * Time.deltaTime);
+        m_rigidbody.velocity = new Vector2(0, 0);
         moveState = false;
         moving = false;
         attackingRanged = false;
@@ -263,7 +273,18 @@ public class BrokeGolem : MonoBehaviour
 
     private void Flip()
     {
-        movingRight = !movingRight;
-        transform.Rotate(0f, 180f, 0f);
+        //movingRight = !movingRight;
+        //transform.Rotate(0f, 180f, 0f);
+
+        if (movingRight == false)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            movingRight = !movingRight;
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+            movingRight = !movingRight;
+        }
     }
 }
