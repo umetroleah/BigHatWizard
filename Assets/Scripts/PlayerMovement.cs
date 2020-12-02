@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
             startJump = false;
         }
         //Stop jumping animation, unless its the beginning of the jump before leaving the ground
-        else if(!startJump)
+        else if (!startJump)
         {
             jump = false;
         }
@@ -99,11 +99,20 @@ public class PlayerMovement : MonoBehaviour
             startJump = true;
             controller.Jump(jumpHeight);
         }
+        //If jump button is pushed while in air and double jump is available
+        if (Input.GetButtonDown("Jump") && controller.doubleJumpReady && (jump || fall) && !startJump)
+        {
+            jump = true;
+            jumpHeld = true;
+            startJump = true;
+            controller.Jump(jumpHeight);
+            controller.doubleJumpReady = false;
+        }
+        //Change variable so you can fall faster when jump isn't held anymore
         if (Input.GetButtonUp("Jump"))
         {
             jumpHeld = false;
         }
-
 
         //Check for crouch button
         if (Input.GetButtonDown("Crouch"))
@@ -183,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
         else if (fall)
             controller.ChangeDrag(normalDrag);
         else
-            controller.ChangeDrag(0f);
+            controller.ChangeDrag(0.1f);
     }
 
     public void OnLanding()

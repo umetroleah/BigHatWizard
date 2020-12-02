@@ -4938,6 +4938,9 @@ MonoBehaviour:
   m_CeilingPosition: {fileID: 6026050829016130416}
   m_CrouchDisabledCollider: {fileID: 6026050828747201142}
   m_CrouchDisabledTrigger: {fileID: 2587789999214473755}
+  m_FacingRight: 1
+  doubleJump: 1
+  doubleJumpReady: 1
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4957,9 +4960,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 100
-  m_LinearDrag: 0
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
-  m_GravityScale: 2.7
+  m_GravityScale: 3.65
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5084,7 +5087,7 @@ MonoBehaviour:
   controller: {fileID: 6026050828747201141}
   animator: {fileID: 6026050828747200904}
   runSpeed: 45
-  jumpHeight: 60
+  jumpHeight: 73
   attackTime: 0.2
   dashTime: 0.125
   dashSpeed: 43
@@ -5172,8 +5175,8 @@ MonoBehaviour:
     type: 3}
   normalCooldown: 0.25
   powerCooldown: 2
-  normalShotKnockback: 0.3
-  powerShotKnockback: 0.5
+  normalShotKnockback: 0.5
+  powerShotKnockback: 0.9
 --- !u!1 &6026050828753172063
 GameObject:
   m_ObjectHideFlags: 0

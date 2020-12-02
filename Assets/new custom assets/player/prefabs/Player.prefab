@@ -185,6 +185,9 @@ MonoBehaviour:
   m_CeilingPosition: {fileID: 2855060741832826201}
   m_CrouchDisabledCollider: {fileID: 2855060741562786911}
   m_CrouchDisabledTrigger: {fileID: -2894039295049135054}
+  m_FacingRight: 1
+  doubleJump: 1
+  doubleJumpReady: 1
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -419,8 +422,8 @@ MonoBehaviour:
     type: 3}
   normalCooldown: 0.25
   powerCooldown: 1
-  normalShotKnockback: 0.5
-  powerShotKnockback: 2
+  normalShotKnockback: 0.8
+  powerShotKnockback: 2.7
 --- !u!1 &2855060741590370422
 GameObject:
   m_ObjectHideFlags: 0

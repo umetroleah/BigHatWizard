@@ -26,6 +26,9 @@ public class CharacterController2D : MonoBehaviour
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
 
+    public bool doubleJump = false;
+    public bool doubleJumpReady = false;
+
 
     [Header("Events")]
     [Space]
@@ -57,10 +60,12 @@ public class CharacterController2D : MonoBehaviour
         FallCheck();
         JumpCheck();
 
-
+        //on landing
         if (((m_wasFalling && !m_Falling) || (m_wasJumping && !m_Jumping && !m_Falling)) && m_Grounded)
         {
             OnLandEvent.Invoke();
+            if (doubleJump)
+                doubleJumpReady = true;
             SoundManager.PlaySound("landing");
         }
 
@@ -86,10 +91,10 @@ public class CharacterController2D : MonoBehaviour
         */
 
         //If the player is launched up too fast, slow them down
-        if((m_Jumping || m_Falling) && m_Rigidbody2D.velocity.y > 18)
+        if((m_Jumping || m_Falling) && m_Rigidbody2D.velocity.y > 24)
         {
-            //print(m_Rigidbody2D.velocity.y);
-            ChangeDrag(250);
+            print(m_Rigidbody2D.velocity.y);
+            ChangeDrag(m_Rigidbody2D.velocity.y);
         }
         else if(m_Rigidbody2D.drag>10)
         {
@@ -209,10 +214,11 @@ public class CharacterController2D : MonoBehaviour
 
     public void Jump(float jumpHeight)
     {
-        if(m_Rigidbody2D.velocity.y < 0)
+        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
+        /*if(m_Rigidbody2D.velocity.y < 0)
         {
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-        }
+        }*/
         //m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
         float jumpForce = CalculateJumpForce(m_Rigidbody2D.gravityScale, jumpHeight);
         m_Rigidbody2D.AddForce(Vector2.up * jumpForce * m_Rigidbody2D.mass, ForceMode2D.Impulse);
