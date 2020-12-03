@@ -220,6 +220,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 257
   speed: 5
-  distance: 0.09
+  distance: 0.1
   m_rigidbody2D: {fileID: 3969063546153757055}
   wallDetection: {fileID: 3969063545805339031}
