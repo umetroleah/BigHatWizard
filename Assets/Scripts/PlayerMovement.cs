@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     bool dashAvailable;
     bool groundSinceDash;
     public GameObject dashTrailPrefab;
+    bool addDashPrefab = true;
 
     float lastStep = 0f;
 
@@ -157,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
             //animator.SetBool("Dashing", true);
             //ChangeAnimationState(DASH);
             SoundManager.PlaySound("dashing");
+            addDashPrefab = true;
         }
 
 
@@ -225,14 +227,21 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             controller.Dash(dashSpeed);
-            Instantiate(dashTrailPrefab, this.transform.position, this.transform.rotation);
-            if (this.transform.rotation.y < 0)
-                dashTrailPrefab.transform.localScale = new Vector3(-1, 1, 1);
-            else
-                dashTrailPrefab.transform.localScale = new Vector3(1, 1, 1);
-            
-            dashTrailPrefab.GetComponent<Rigidbody2D>().velocity = Vector2.right * dashSpeed;
-            CinemachineShake.Instance.ShakeCamera(20f, 0.1f, 0.1f);
+            //add in dash prefab if one doesn't already exist
+            if (addDashPrefab)
+            {
+                GameObject dashEffect = Instantiate(dashTrailPrefab, this.transform.position, this.transform.rotation);
+                //ensure it's facing the correct direction
+                if (this.transform.rotation.y < 0)
+                    dashEffect.transform.localScale = new Vector3(-1, 1, 1);
+                else
+                    dashEffect.transform.localScale = new Vector3(1, 1, 1);
+
+                //dashTrailPrefab.GetComponent<Rigidbody2D>().velocity = Vector2.right * dashSpeed;
+                dashEffect.transform.parent = this.transform;
+                //CinemachineShake.Instance.ShakeCamera(20f, 0.1f, 0.1f);
+                addDashPrefab = false;
+            }
         }
     }
 

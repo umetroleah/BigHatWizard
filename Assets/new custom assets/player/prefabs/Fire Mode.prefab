@@ -5345,7 +5345,7 @@ MonoBehaviour:
   dashTime: 0.125
   dashSpeed: 43
   dashCooldown: 0.5
-  dashTrailPrefab: {fileID: 6667498523353879699, guid: 0a6f57a116519694ea972200ff569b2b,
+  dashTrailPrefab: {fileID: 3687126077172458800, guid: c3006b87270831847b98ebe99ff2aab7,
     type: 3}
   slowDrag: 10
   normalDrag: 0.3

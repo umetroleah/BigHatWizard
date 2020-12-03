@@ -30,7 +30,7 @@ public class Shot : MonoBehaviour
             Hazard hazard = hitInfo.GetComponent<Hazard>();
             if (trail == null)
             {
-                if ((!EnemyShot && weapon == null) || (EnemyShot && hazard == null))
+                if (((!EnemyShot && weapon == null) || (EnemyShot && hazard == null)) && hitInfo.tag != "MainCamera")
                 {
                     GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
                     impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
