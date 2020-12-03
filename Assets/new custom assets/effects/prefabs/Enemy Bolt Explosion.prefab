@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 546051703701906206}
   - component: {fileID: 667650541282244677}
   - component: {fileID: -7599294626259329020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy Bolt Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4763307031634579130}
   - component: {fileID: 6780837221345443921}
   - component: {fileID: 6780837221345443935}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball Explode Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

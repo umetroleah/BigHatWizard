@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7054024606995535311}
   - component: {fileID: 9071405258834221860}
   - component: {fileID: 9071405258834221866}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magic Bolt Explode Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

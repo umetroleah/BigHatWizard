@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6450578081965267817}
   - component: {fileID: 8173991943713179277}
   - component: {fileID: -3034592983429812815}
-  m_Layer: 0
-  m_Name: DashTrail
+  m_Layer: 11
+  m_Name: DefaultDashTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

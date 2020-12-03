@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3698968828396541277}
   - component: {fileID: 3698968828396541276}
   - component: {fileID: -1702356916081875200}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magic Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

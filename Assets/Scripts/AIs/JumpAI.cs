@@ -43,6 +43,7 @@ public class JumpAI : MonoBehaviour
         GroundCheck();
         FallCheck();
         JumpCheck();
+        float speedMult = this.GetComponent<Enemy>().speedMult;
 
         //Debug.Log(m_Grounded);
 
@@ -61,7 +62,7 @@ public class JumpAI : MonoBehaviour
         if (landTime + jumpCooldown < Time.time && m_Grounded)
         {
             //Debug.Log("Jumping");
-            Jump(jumpHeight);
+            Jump(jumpHeight * speedMult);
         }
 
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5986934175320681339}
   - component: {fileID: 5986934175320681332}
   - component: {fileID: 5986934175320681329}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

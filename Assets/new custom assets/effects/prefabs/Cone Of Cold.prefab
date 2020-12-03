@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4795112030959511835}
   - component: {fileID: 1855143392482696007}
   - component: {fileID: 5267609763511623456}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cone Of Cold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5802699981317339813}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cone Of Cold
   m_TagString: Untagged
   m_Icon: {fileID: 0}

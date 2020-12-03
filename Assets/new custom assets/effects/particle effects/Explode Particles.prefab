@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1856722104768235027}
   - component: {fileID: 415619717779835128}
   - component: {fileID: 415619717779835126}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Explode Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

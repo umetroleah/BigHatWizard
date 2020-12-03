@@ -22,9 +22,9 @@ public class WalkAI : MonoBehaviour
         //Move to the right
         //transform.Translate(Vector2.right * speed * speedMult * Time.deltaTime);
         if (movingRight)
-            m_rigidbody2D.velocity = new Vector2(speed, 0f);
+            m_rigidbody2D.velocity = new Vector2(speed * speedMult, 0f);
         else
-            m_rigidbody2D.velocity = new Vector2(-speed, 0f);
+            m_rigidbody2D.velocity = new Vector2(-speed * speedMult, 0f);
 
         //Change direction if it hits a wall
         RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);

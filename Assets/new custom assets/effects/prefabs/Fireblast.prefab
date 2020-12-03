@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3853740265834544685}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireblast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 6291453001404008064}
   - component: {fileID: 899269401169327324}
   - component: {fileID: 5207939970962489946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireblast
   m_TagString: Untagged
   m_Icon: {fileID: 0}

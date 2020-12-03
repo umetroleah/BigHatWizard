@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7750121016079300460}
   - component: {fileID: 7512759472271953019}
   - component: {fileID: 7403715019736115813}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

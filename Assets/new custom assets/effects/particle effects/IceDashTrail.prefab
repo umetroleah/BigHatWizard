@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7012562871900852177}
   - component: {fileID: 5312967782888264245}
   - component: {fileID: 7869578088262039817}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IceDashTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

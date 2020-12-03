@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3902920635817880266}
   - component: {fileID: 2216652174286354222}
   - component: {fileID: 4201311958412516370}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FireDashTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

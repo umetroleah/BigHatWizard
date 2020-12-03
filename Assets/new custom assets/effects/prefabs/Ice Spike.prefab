@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3105209875143580106}
   - component: {fileID: 4861610003933789896}
   - component: {fileID: -7914265958219049342}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ice Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}

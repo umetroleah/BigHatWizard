@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300691604139161053}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magic Blast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2730928305150663671}
   - component: {fileID: 2730928305150663670}
   - component: {fileID: 9138743973945518506}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magic Blast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
