@@ -8490,6 +8490,7 @@ GameObject:
   - component: {fileID: 870861216}
   - component: {fileID: 870861215}
   - component: {fileID: 870861214}
+  - component: {fileID: 870861217}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -8620,6 +8621,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!164 &870861217
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870861213}
+  m_Enabled: 1
+  m_DryLevel: -100
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91
+  m_DecayHFRatio: 1.3
+  m_ReflectionsLevel: -602
+  m_ReverbLevel: -302
+  m_ReverbDelay: 0.022
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 27
 --- !u!1 &931977979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,20 +8957,20 @@ AudioReverbFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978870684}
-  m_Enabled: 0
+  m_Enabled: 1
   m_DryLevel: 0
-  m_Room: 0
-  m_RoomHF: 0
-  m_DecayTime: 1
-  m_DecayHFRatio: 0.5
+  m_Room: -100
+  m_RoomHF: -3000
+  m_DecayTime: 20
+  m_DecayHFRatio: 0.1
   m_ReflectionsLevel: -10000
-  m_ReverbLevel: 0
-  m_ReverbDelay: 0.04
+  m_ReverbLevel: -2000
+  m_ReverbDelay: 0
   m_Diffusion: 100
   m_Density: 100
-  m_HFReference: 5000
+  m_HFReference: 20000
   m_RoomLF: 0
-  m_LFReference: 250
+  m_LFReference: 1000
   m_ReflectionsDelay: 0
   m_ReverbPreset: 27
 --- !u!1 &980547213
@@ -9504,7 +9528,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 706d4925cbdfdbf499174380521fd58a, type: 2}
+  sharedProfile: {fileID: 11400000, guid: aba0e03bf4c5afa4fa42e3550a257623, type: 2}
 --- !u!4 &1203023855
 Transform:
   m_ObjectHideFlags: 0

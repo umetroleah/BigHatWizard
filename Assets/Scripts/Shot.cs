@@ -28,6 +28,7 @@ public class Shot : MonoBehaviour
             Trail trail = hitInfo.GetComponent<Trail>();
             Weapon weapon = hitInfo.GetComponent<Weapon>();
             Hazard hazard = hitInfo.GetComponent<Hazard>();
+
             if (trail == null)
             {
                 if (((!EnemyShot && weapon == null) || (EnemyShot && hazard == null)) && hitInfo.tag != "MainCamera")

@@ -91,13 +91,10 @@ public class PlayerMovement : MonoBehaviour
             fall = false;
         }
 
-        if (Input.GetButtonDown("Jump")){
-            print("jump!");
-        }
+
         //If jump button is pushed when not already in the air, jump
         if (Input.GetButtonDown("Jump") && !jump && !fall && controller.GroundCheck())
         {
-            print("jumping");
             jump = true;
             jumpHeld = true;
             startJump = true;
