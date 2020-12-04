@@ -6024,6 +6024,7 @@ GameObject:
   - component: {fileID: 152791874}
   - component: {fileID: 152791873}
   - component: {fileID: 152791875}
+  - component: {fileID: 152791876}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -6155,6 +6156,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSrc: {fileID: 152791873}
+--- !u!164 &152791876
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152791872}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -2500
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.21
+  m_ReflectionsLevel: -2780
+  m_ReverbLevel: -1434
+  m_ReverbDelay: 0.1
+  m_Diffusion: 27
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 18
 --- !u!1 &157700281
 GameObject:
   m_ObjectHideFlags: 0
@@ -68612,6 +68636,7 @@ GameObject:
   - component: {fileID: 1698258041}
   - component: {fileID: 1698258040}
   - component: {fileID: 1698258039}
+  - component: {fileID: 1698258042}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -68742,6 +68767,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!164 &1698258042
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698258038}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -2500
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.21
+  m_ReflectionsLevel: -2780
+  m_ReverbLevel: -1434
+  m_ReverbDelay: 0.1
+  m_Diffusion: 27
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 18
 --- !u!1 &1725294524
 GameObject:
   m_ObjectHideFlags: 0
