@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CrouchSpeed: 0.85
-  m_MovementSmoothing: 0.09
+  m_MovementSmoothing: 0.08
   m_AirControl: 1
   m_GroundLayer:
     serializedVersion: 2
@@ -261,6 +261,8 @@ MonoBehaviour:
   m_FacingRight: 1
   doubleJump: 1
   doubleJumpReady: 1
+  onIce: 0
+  iceControl: 0.5
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -406,8 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2855060741562786908}
   animator: {fileID: 2855060741562787745}
-  runSpeed: 45
-  jumpHeight: 73
+  runSpeed: 55
+  jumpHeight: 70
   attackTime: 0.2
   dashTime: 0.125
   dashSpeed: 43
@@ -495,8 +497,8 @@ MonoBehaviour:
     type: 3}
   normalCooldown: 0.25
   powerCooldown: 1
-  normalShotKnockback: 0.8
-  powerShotKnockback: 2.7
+  normalShotKnockback: 1
+  powerShotKnockback: 2.5
 --- !u!1 &2855060741590370422
 GameObject:
   m_ObjectHideFlags: 0

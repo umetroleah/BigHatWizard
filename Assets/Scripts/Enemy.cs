@@ -157,7 +157,10 @@ public class Enemy : MonoBehaviour
         CinemachineShake.Instance.ShakeCamera(15f, 0.5f, 0.2f);
 
         if (healthBar != null)
+        {
+            healthBar.gameObject.SetActive(false);
             Destroy(GetComponent<Enemy>().healthBar);
+        }
 
         Destroy(gameObject);
     }

@@ -5267,6 +5267,8 @@ MonoBehaviour:
   m_FacingRight: 1
   doubleJump: 1
   doubleJumpReady: 1
+  onIce: 0
+  iceControl: 0.3
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5501,7 +5503,7 @@ MonoBehaviour:
     type: 3}
   normalCooldown: 0.35
   powerCooldown: 2
-  normalShotKnockback: 1.3
+  normalShotKnockback: 1.5
   powerShotKnockback: 5
 --- !u!1 &1080974978239081029
 GameObject:

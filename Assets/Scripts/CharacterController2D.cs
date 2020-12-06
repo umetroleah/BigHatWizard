@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
-    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
+    [Range(0, 1f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
     [SerializeField] private LayerMask m_GroundLayer;                          // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundPositionBack;                   // A position marking where to check if the player is grounded in the back.
@@ -30,6 +30,10 @@ public class CharacterController2D : MonoBehaviour
     public bool doubleJumpReady = false;
 
 
+    public bool onIce = false;
+    public float iceControl = 0f;
+
+
     [Header("Events")]
     [Space]
 
@@ -40,6 +44,9 @@ public class CharacterController2D : MonoBehaviour
 
     public BoolEvent OnCrouchEvent;
     private bool m_wasCrouching = false;
+
+
+
 
     private void Awake()
     {
@@ -91,7 +98,7 @@ public class CharacterController2D : MonoBehaviour
         */
 
         //If the player is launched up too fast, slow them down
-        if((m_Jumping || m_Falling) && m_Rigidbody2D.velocity.y > 24)
+        /*if((m_Jumping || m_Falling) && m_Rigidbody2D.velocity.y > 30)
         {
             print(m_Rigidbody2D.velocity.y);
             ChangeDrag(m_Rigidbody2D.velocity.y);
@@ -99,7 +106,7 @@ public class CharacterController2D : MonoBehaviour
         else if(m_Rigidbody2D.drag>10)
         {
             ChangeDrag(0.1f);
-        }
+        }*/
 
     }
 
@@ -123,6 +130,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void Move(float move, bool crouch, bool jump)
     {
+        //print(onIce);
         // If crouching, check to see if the character can stand up
         if (!crouch && m_wasCrouching)
         {
@@ -179,7 +187,12 @@ public class CharacterController2D : MonoBehaviour
             Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
 
             // And then smoothing it out and applying it to the character
-            m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+            if (onIce)
+                m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, (1f - iceControl));
+            else
+                m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
+
 
 
             // If the input is moving the player right and the player is facing left...
@@ -245,7 +258,7 @@ public class CharacterController2D : MonoBehaviour
             else if (hitPos.normal.y > 0) // check if its collided on top 
             {
                 m_Grounded = true;
-                //print("grounded");
+                //print("grounded " + collision.gameObject);
             }
             else m_Grounded = false;
         }
@@ -297,11 +310,22 @@ public class CharacterController2D : MonoBehaviour
         {
             //print("here");
             m_Grounded = false;
+            onIce = false;
         }
         else
         {
             //print("grounded");
             m_Grounded = true;
+
+            //if there's an ice component on the collider game object, start ice control
+            if (hitFront.collider.gameObject.GetComponent<Ice>() != null)
+            {
+                onIce = true;
+            }
+            else
+            {
+                onIce = false;
+            }
         }
 
         return m_Grounded;

@@ -79,7 +79,7 @@ public class Weapon : MonoBehaviour
             {
                 //Shooting up
                 Instantiate(shot, firePointUp.position, firePointUp.rotation);
-                m_Rigidbody2D.AddForce(new Vector2(0, -4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
+                m_Rigidbody2D.AddForce(new Vector2(0, -4) * shotKnockback/1.5f * m_Rigidbody2D.mass, ForceMode2D.Impulse);
             }
         }
         else if (direction < 0 && !grounded)
@@ -94,6 +94,17 @@ public class Weapon : MonoBehaviour
             {
                 //Shooting down from air
                 Instantiate(shot, firePointDown.position, firePointDown.rotation);
+                //If moving up very fast, slow or stop knockback to prevent flying
+                if (m_Rigidbody2D.velocity.y > 20)
+                    shotKnockback /= 2;
+                if (m_Rigidbody2D.velocity.y > 30)
+                    shotKnockback = 0f;
+
+                //If moving down, stop movement to allow player to get knocked back up a bit
+                if(m_Rigidbody2D.velocity.y <= 0)
+                {
+                    m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0f);
+                }
                 m_Rigidbody2D.AddForce(new Vector2(0, 4) * shotKnockback * m_Rigidbody2D.mass, ForceMode2D.Impulse);
             }
         }

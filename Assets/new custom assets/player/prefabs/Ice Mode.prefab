@@ -5020,6 +5020,8 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+  onIce: 0
+  iceControl: 1
 --- !u!50 &6026050828747201143
 Rigidbody2D:
   serializedVersion: 4
@@ -5249,7 +5251,7 @@ MonoBehaviour:
   normalCooldown: 0.25
   powerCooldown: 2
   normalShotKnockback: 0.5
-  powerShotKnockback: 0.9
+  powerShotKnockback: 2
 --- !u!1 &6026050828753172063
 GameObject:
   m_ObjectHideFlags: 0
