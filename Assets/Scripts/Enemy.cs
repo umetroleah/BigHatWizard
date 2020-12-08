@@ -184,7 +184,7 @@ public class Enemy : MonoBehaviour
     {
         Shot shot = hitInfo.GetComponent<Shot>();
         Effect effect = hitInfo.GetComponent<Effect>();
-        if (shot != null)
+        if (shot != null && !shot.EnemyShot)
         {
             this.TakeDamage(shot.damage);
 

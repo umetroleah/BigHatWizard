@@ -318,7 +318,7 @@ public class CharacterController2D : MonoBehaviour
             m_Grounded = true;
 
             //if there's an ice component on the collider game object, start ice control
-            if (hitFront.collider.gameObject.GetComponent<Ice>() != null)
+            if (hitFront.collider != null && hitFront.collider.gameObject.GetComponent<Ice>() != null)
             {
                 onIce = true;
             }
