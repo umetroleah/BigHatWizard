@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 6013032171140308804}
   m_Layer: 11
   m_Name: Fireblast
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5207939970962489946}
   m_Layer: 11
   m_Name: Fireblast
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

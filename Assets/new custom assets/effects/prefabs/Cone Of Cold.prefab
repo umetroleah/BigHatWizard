@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5267609763511623456}
   m_Layer: 11
   m_Name: Cone Of Cold
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 1472509971595787005}
   m_Layer: 11
   m_Name: Cone Of Cold
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: 8222223137081070613
     second: Tiles test_1
+  - first:
+      213: -3381735775509431456
+    second: Tiles test_0
+  - first:
+      213: -8913156008453766189
+    second: Tiles test_1
+  - first:
+      213: -2959737312769974036
+    second: Tiles test_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bfbb20c3e0aec680800000000000000
-      internalID: -8732865727382700104
+      spriteID: 06bb788ba39a111d0800000000000000
+      internalID: -3381735775509431456
       vertices: []
       indices: 
       edges: []
@@ -154,8 +163,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51417b541643b1270800000000000000
-      internalID: 8222223137081070613
+      spriteID: 3d3897095db1e4480800000000000000
+      internalID: -8913156008453766189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles test_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce060eb6896ece6d0800000000000000
+      internalID: -2959737312769974036
       vertices: []
       indices: 
       edges: []
