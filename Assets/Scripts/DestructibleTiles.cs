@@ -14,44 +14,12 @@ public class DestructibleTiles : MonoBehaviour
         destructibleTilemap = GetComponent<Tilemap>();
     }
 
-    /*void OnCollisionEnter2D(Collision2D collision)
-    {
-        //print("Collider");
-        if (collision.gameObject.CompareTag("Shot"))
-        {
-            Vector3 hitPosition = Vector3.zero;
-            foreach(ContactPoint2D hit in collision.contacts)
-            {
-                hitPosition.x = Mathf.Round(hit.point.x);
-                hitPosition.y = Mathf.Round(hit.point.y);
-
-                //print(collision.gameObject.transform.rotation.eulerAngles);
-                //detect in shot is moving left/right and up/down to see how to move hitposition
-                bool movingRight = (collision.gameObject.transform.rotation.eulerAngles.y == 0f && Mathf.Abs(collision.gameObject.transform.rotation.eulerAngles.z - 180f) != 90f);
-                bool movingLeft = (collision.gameObject.transform.rotation.eulerAngles.y == 180f && Mathf.Abs(collision.gameObject.transform.rotation.eulerAngles.z - 180f) != 90f);
-                bool movingUp = (collision.gameObject.transform.rotation.eulerAngles.z == 90f || collision.gameObject.transform.rotation.eulerAngles.z == 45f);
-                bool movingDown = (collision.gameObject.transform.rotation.eulerAngles.z == 270f || collision.gameObject.transform.rotation.eulerAngles.z == 315f);
-                if (movingRight)
-                    hitPosition.x += 0.5f;
-                if (movingLeft)
-                    hitPosition.x -= 0.5f;
-                if (movingUp)
-                    hitPosition.y += 0.5f;
-                if (movingDown)
-                    hitPosition.y -= 0.5f;
-                //print("right: " + movingRight + "      down: " + movingDown + "      left: " + movingLeft + "      up: " + movingUp);
-
-                print(hitPosition + " = " + destructibleTilemap.WorldToCell(hitPosition));
-                //destructibleTilemap.SetTile(destructibleTilemap.WorldToCell(hitPosition), null);
-            }
-            Instantiate(destructionEffect, transform.position, transform.rotation);
-        }
-    }*/
+    
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         //print("Trigger");
-        print(collider.gameObject);
+        //print(collider.gameObject);
         if (collider.gameObject.CompareTag("Shot"))
         {
             Vector3 hitPosition = collider.gameObject.transform.position;
@@ -59,9 +27,16 @@ public class DestructibleTiles : MonoBehaviour
             {
                 for(int j = -1; j<=1; j++)
                 {
-                    RaycastHit2D hit = Physics2D.Raycast(hitPosition, new Vector2((float) i, (float) j), 1.5f, tilesLayer);
-                    //Debug.DrawRay(hitPosition, new Vector2((float)i, (float)j) * 1, Color.red, 10f, false);
+                    Vector2 direction = new Vector2((float)i, (float)j);
+                    direction.Normalize();
+
+                    RaycastHit2D hit = Physics2D.Raycast(hitPosition, direction, 2f, tilesLayer);
+                    //Debug.DrawRay(hitPosition, direction * 2, Color.red, 10f, false);
+
+                    Vector2 destructionPoint2 = new Vector2(hit.point.x - 0.1f, hit.point.y);
+
                     destructibleTilemap.SetTile(destructibleTilemap.WorldToCell(hit.point), null);
+                    destructibleTilemap.SetTile(destructibleTilemap.WorldToCell(destructionPoint2), null);
                     Instantiate(destructionEffect, transform.position, transform.rotation);
                 }
             }
