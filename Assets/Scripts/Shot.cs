@@ -31,7 +31,7 @@ public class Shot : MonoBehaviour
 
             if (trail == null)
             {
-                if (((!EnemyShot && weapon == null) || (EnemyShot && hazard == null)) && hitInfo.tag != "MainCamera")
+                if (((!EnemyShot && weapon == null) || (EnemyShot && hazard == null)) && hitInfo.tag != "MainCamera" && hitInfo.gameObject.layer != 4)
                 {
                     GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation, impactEffect.transform.parent);
                     impact.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
