@@ -45,14 +45,14 @@ public class PlayerCombat : MonoBehaviour
 
         //Damage flash effect
         SoundManager.PlaySound("hurt");
-        StartCoroutine(FlashColor());
+        StartCoroutine(FlashColor(Color.red));
 
         CinemachineShake.Instance.ShakeCamera(15f, 0.6f, 0.3f);
     }
 
-    IEnumerator FlashColor()
+    IEnumerator FlashColor(Color color)
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = color;
         yield return new WaitForSeconds(0.1f);
         GetComponent<SpriteRenderer>().color = Color.white;
     }

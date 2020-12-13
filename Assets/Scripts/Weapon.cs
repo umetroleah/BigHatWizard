@@ -15,14 +15,20 @@ public class Weapon : MonoBehaviour
     //replace with array of bullet prefabs dependent on weapon equipped later
     public GameObject normalShot;
     public GameObject powerShot;
+    public GameObject chargedShot;
+    public ParticleSystem chargingEffect;
 
 
-    public float normalCooldown = 0;
-    public float powerCooldown = 0;
+    public float normalCooldown = 0f;
+    public float powerCooldown = 0f;
     private float nextNormalShot;
     private float nextPowerShot;
+    private float chargeStart = 0f;
+    private bool charging = false;
     public float normalShotKnockback = 1f;
     public float powerShotKnockback = 2f;
+    private bool finishCharge = false;
+
 
     // Update is called once per frame
 
@@ -31,6 +37,7 @@ public class Weapon : MonoBehaviour
         nextNormalShot = Time.time;
         nextPowerShot = Time.time;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        chargingEffect.enableEmission = false;
     }
 
     void Update()
@@ -39,6 +46,8 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Shoot(normalShot, true, 0f));
             nextNormalShot = Time.time + normalCooldown;
+            chargeStart = Time.time;
+            charging = true;
         }
 
         if (Input.GetButtonDown("Fire2") && Time.time >= nextPowerShot)
@@ -47,6 +56,37 @@ public class Weapon : MonoBehaviour
             nextPowerShot = Time.time + powerCooldown;
             nextNormalShot = Time.time + normalCooldown;
         }
+
+        if (charging && chargeStart + 0.25f <= Time.time)
+        {
+            chargingEffect.enableEmission = true;
+            CinemachineShake.Instance.ShakeCamera(20f, Mathf.Clamp((Time.time - chargeStart) / 2.5f, 0.1f, 0.4f), 0.4f);
+            if (chargeStart + 1f <= Time.time && !finishCharge)
+            {
+                finishCharge = true;
+                StartCoroutine(FlashColor(Color.blue));
+            }
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            if(finishCharge)
+            {
+                StartCoroutine(Shoot(chargedShot, true, 0f));
+            }
+            charging = false;
+            finishCharge = false;
+            chargingEffect.enableEmission = false;
+        }
+
+
+    }
+
+    IEnumerator FlashColor(Color color)
+    {
+        GetComponent<SpriteRenderer>().color = color;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     IEnumerator Shoot(GameObject shot, bool normal, float delay)
