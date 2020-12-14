@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
 
-    public int health = 100;
+    public int health = 500;
     public GameObject deathEffect;
     public Weapon weapon;
     private Rigidbody2D m_Rigidbody2D;
@@ -16,12 +16,19 @@ public class PlayerCombat : MonoBehaviour
     public HealthBar healthBar;
 
 
-    void Start()
+    void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         if(healthBar == null)
             healthBar = GameObject.FindGameObjectsWithTag("HealthBar")[0].GetComponent<HealthBar>();
         healthBar.SetMaxHealth(health);
+        healthBar.SetHealth(health);
+    }
+
+    public void LowerHealthNoHit(int newHealth)
+    {
+        health = newHealth;
+        healthBar.SetHealth(health);
     }
 
     public void TakeDamage(int damage)

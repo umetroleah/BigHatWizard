@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
+    public string scene = "Terrain Tester";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class SceneLoader : MonoBehaviour
         //If the player enters the trigger hitbox
         if (hitInfo.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("TerrainTester");
+            SceneManager.LoadScene(scene);
         }
 
     }
