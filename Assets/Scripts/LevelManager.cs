@@ -8,8 +8,14 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
 
-    public Transform respawnPoint;
-    public Transform tempPoint;
+    private Transform spawnPointFinal;
+    public Transform spawnPoint1;
+    public Transform spawnPoint2;
+    public Transform spawnPoint3;
+    public Transform spawnPoint4;
+    public static int spawnPointID = 0;
+
+    private Transform tempPoint;
     public GameObject playerPrefab;
     public CinemachineVirtualCamera vcam;
 
@@ -17,17 +23,48 @@ public class LevelManager : MonoBehaviour
     public GameObject firePrefab;
     public GameObject icePrefab;
 
-    public int currentPrefab;
+    public static int currentPrefab = 0;
+
+
+
 
     public void Awake()
     {
         instance = this;
-        currentPrefab = 0;
+
+        spawnPointID = SceneLoader.spawnPoint;
+        switch (spawnPointID)
+        {
+            case 1:
+                spawnPointFinal = spawnPoint1;
+                break;
+            case 2:
+                spawnPointFinal = spawnPoint2;
+                break;
+            case 3:
+                spawnPointFinal = spawnPoint3;
+                break;
+            case 4:
+                spawnPointFinal = spawnPoint4;
+                break;
+            default:
+                spawnPointFinal = spawnPoint1;
+                break;
+        }
+
+
+        SwapPrefab(currentPrefab);
+        MovePlayerToSpawn();
+    }
+
+    public void MovePlayerToSpawn()
+    {
+        PlayerCombat.instance.transform.position = spawnPointFinal.position;
     }
 
     public void Respawn()
     {
-        GameObject gameObject = Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
+        GameObject gameObject = Instantiate(playerPrefab, spawnPointFinal.position, Quaternion.identity);
         vcam.m_Follow = gameObject.transform;
         vcam.Follow = gameObject.transform;
     }

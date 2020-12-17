@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    public static PlayerCombat instance;
 
     public int maxHealth = 500;
     public static int health = 500;
@@ -19,7 +20,10 @@ public class PlayerCombat : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        //DontDestroyOnLoad(transform.gameObject);
+
+        instance = this;
+
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         if(healthBar == null)
             healthBar = GameObject.FindGameObjectsWithTag("HealthBar")[0].GetComponent<HealthBar>();
