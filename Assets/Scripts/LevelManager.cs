@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour
     {
         GameObject currentPlayer = GameObject.FindGameObjectsWithTag("Player")[0];
         Transform playerPosition = currentPlayer.transform;
-        int health = currentPlayer.GetComponent<PlayerCombat>().health;
+        int health = PlayerCombat.health;
 
         if (prefab == 1)
         {
@@ -80,7 +80,7 @@ public class LevelManager : MonoBehaviour
         Destroy(currentPlayer);
 
         //Set health to same as before prefab swap
-        newPlayer.GetComponent<PlayerCombat>().health = health;
+        PlayerCombat.health = health;
         newPlayer.GetComponent<PlayerCombat>().LowerHealthNoHit(health);
     }
 
