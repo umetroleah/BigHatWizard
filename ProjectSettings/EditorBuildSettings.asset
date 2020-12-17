@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Crystal Tree.unity
     guid: b11f91b1232e64d47acf01d11c216e0f
   - enabled: 1
+    path: Assets/Scenes/Tree_Bottom.unity
+    guid: a1c0ea087135086438c5df7006c69752
+  - enabled: 1
     path: Assets/Scenes/TerrainTester.unity
     guid: 5551cbe8eb69e4e4aad68963880d5012
   m_configObjects: {}

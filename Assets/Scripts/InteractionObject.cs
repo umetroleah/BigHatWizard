@@ -17,6 +17,7 @@ public class InteractionObject : MonoBehaviour
     private int index = 0;
     public float typeSpeed = 0.02f;
     public bool dialogOpen;
+    private GameObject opened;
 
     // Start is called before the first frame update
     void Start()
@@ -29,14 +30,17 @@ public class InteractionObject : MonoBehaviour
     {
         FindPlayer();
 
+
+
         //if player is nearby and the interact script was pressed
-        if(Input.GetButtonDown("Interact") && (player.transform.position - this.transform.position).sqrMagnitude < 2 * 2)
+        if (Input.GetButtonDown("Interact") && (player.transform.position - this.transform.position).sqrMagnitude < 2 * 2)
         {
             if (canTalk)
             {
                 //If dialog box isn't already open, open it and start typing, otherwise go to the next sentence
                 if (!dialogOpen)
                 {
+                    opened = this.gameObject;
                     index = 0;
                     textBox.SetActive(true);
                     dialogOpen = true;
@@ -52,13 +56,14 @@ public class InteractionObject : MonoBehaviour
 
 
         //If player walks away or completes the dialog
-        if((player.transform.position - this.transform.position).sqrMagnitude > 2 * 2 || !dialogOpen)
+        if(opened != null && ((player.transform.position - opened.transform.position).sqrMagnitude > 2 * 2 || !dialogOpen))
         {
             if (canTalk)
             {
                 textDisplay.text = "";
                 textBox.SetActive(false);
                 dialogOpen = false;
+                opened = null;
             }
         }
 
