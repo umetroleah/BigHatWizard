@@ -6046,8 +6046,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4a79c290b1b4440b67798c8a007fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 0}
-  tempPoint: {fileID: 0}
+  spawnPoint1: {fileID: 0}
+  spawnPoint2: {fileID: 0}
+  spawnPoint3: {fileID: 0}
+  spawnPoint4: {fileID: 0}
   playerPrefab: {fileID: 2855060741562786906, guid: 8dd71dca97109904fb941cc45c5ee714,
     type: 3}
   vcam: {fileID: 1203514599}
@@ -6057,7 +6059,6 @@ MonoBehaviour:
     type: 3}
   icePrefab: {fileID: 6026050828747201139, guid: 73001f754de955a4d91296ef4f5d5fe4,
     type: 3}
-  currentPrefab: 0
 --- !u!4 &326184434
 Transform:
   m_ObjectHideFlags: 0
@@ -8821,7 +8822,7 @@ GameObject:
   - component: {fileID: 978870688}
   m_Layer: 0
   m_Name: MusicManager
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8839,6 +8840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSrc: {fileID: 978870686}
+  continueMusic: 0
 --- !u!82 &978870686
 AudioSource:
   m_ObjectHideFlags: 0

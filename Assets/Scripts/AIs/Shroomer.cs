@@ -69,8 +69,9 @@ public class Shroomer : MonoBehaviour
         //If player is in detection range
         if ((player.transform.position - this.transform.position).sqrMagnitude < 10 * 10)
         {
+
             //if player is still far away
-            if ((player.transform.position - this.transform.position).sqrMagnitude > 1 * 1)
+            if (Mathf.Abs(player.transform.position.x - this.transform.position.x) > 1)
             {
 
                 RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.right, distance, m_GroundLayer);
