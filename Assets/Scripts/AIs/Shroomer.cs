@@ -46,6 +46,14 @@ public class Shroomer : MonoBehaviour
 
         var direction = Vector2.zero;
 
+
+        //Ensure at the same z level of player to find distance correctly in 2d
+        if (this.transform.position.z != player.transform.position.z)
+        {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, player.transform.position.z);
+        }
+
+
         if (player.transform.position.x < this.transform.position.x)
         {
             if (!movingRight)
