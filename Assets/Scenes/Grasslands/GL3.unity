@@ -7778,9 +7778,9 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 463298095}
     m_ColliderPaths:
-    - - X: -130432685
+    - - X: -122453565
         Y: -423606176
-      - X: -130432685
+      - X: -122453565
         Y: -146056976
       - X: -469415488
         Y: -146057269
@@ -7788,8 +7788,8 @@ CompositeCollider2D:
         Y: -423606176
   m_CompositePaths:
     m_Paths:
-    - - {x: -13.043298, y: -42.36062}
-      - {x: -13.043298, y: -14.605698}
+    - - {x: -12.245386, y: -42.36062}
+      - {x: -12.245386, y: -14.605698}
       - {x: -46.94155, y: -14.605757}
       - {x: -46.94149, y: -42.36062}
   m_VertexDistance: 0.0005
@@ -7807,7 +7807,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: -29.992393, y: -28.483158}
+  m_Offset: {x: -29.593437, y: -28.483158}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7818,7 +7818,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 33.898308, y: 27.754921}
+  m_Size: {x: 34.69622, y: 27.754921}
   m_EdgeRadius: 0
 --- !u!50 &463298096
 Rigidbody2D:
@@ -24000,7 +24000,7 @@ PrefabInstance:
     - target: {fileID: 8128067775391991617, guid: 57cbd28a0d4284441ba45577b92a79a6,
         type: 3}
       propertyPath: spawnSetter
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8128067775391991630, guid: 57cbd28a0d4284441ba45577b92a79a6,
         type: 3}

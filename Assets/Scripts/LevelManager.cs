@@ -49,6 +49,12 @@ public class LevelManager : MonoBehaviour
             case 4:
                 spawnPointFinal = spawnPoint4;
                 break;
+            case 5:
+                spawnPointFinal = spawnPoint5;
+                break;
+            case 6:
+                spawnPointFinal = spawnPoint6;
+                break;
             default:
                 spawnPointFinal = spawnPoint1;
                 break;

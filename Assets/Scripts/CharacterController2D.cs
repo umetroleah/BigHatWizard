@@ -21,6 +21,7 @@ public class CharacterController2D : MonoBehaviour
     private bool m_Falling;
     private bool m_wasFalling;
     private bool m_wasJumping;
+    public bool bouncing;
     const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
     private Rigidbody2D m_Rigidbody2D;
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -235,6 +236,7 @@ public class CharacterController2D : MonoBehaviour
         //m_Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
         float jumpForce = CalculateJumpForce(m_Rigidbody2D.gravityScale, jumpHeight);
         m_Rigidbody2D.AddForce(Vector2.up * jumpForce * m_Rigidbody2D.mass, ForceMode2D.Impulse);
+        bouncing = false;
         //m_Grounded = false;
     }
 
@@ -258,6 +260,14 @@ public class CharacterController2D : MonoBehaviour
             else if (hitPos.normal.y > 0) // check if its collided on top 
             {
                 m_Grounded = true;
+                if(collision.gameObject.tag == "Bouncy")
+                {
+                    bouncing = true;
+                }
+                else
+                {
+                    bouncing = false;
+                }
                 //print("grounded " + collision.gameObject);
             }
             else m_Grounded = false;

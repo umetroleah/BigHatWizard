@@ -8,6 +8,7 @@ TagManager:
   - Shot
   - Music
   - Platform
+  - Bouncy
   layers:
   - Default
   - TransparentFX

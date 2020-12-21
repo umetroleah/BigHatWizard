@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     bool crouch = false;
     bool dash = false;
     bool shoot = false;
+    bool bounce = false;
 
     float dashStart;
     [SerializeField] public float dashTime;
@@ -66,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-
+        bounce = controller.bouncing;
 
         //Check if you were already jumping
         if (controller.JumpCheck())
@@ -217,7 +218,7 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 
 
-            if (!jumpHeld && jump)
+            if (!jumpHeld && !bounce && jump)
             {
                 //Debug.Log("here");
                 controller.CounterJump(jumpHeight);
