@@ -19,4 +19,11 @@ public class RotationObject : MonoBehaviour
     {
         rigidbody2D.angularVelocity = rotationSpeed;
     }
+
+    void OnDisable()
+    {
+        rigidbody2D.angularVelocity = 0f;
+        transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+    }
+
 }
