@@ -7,6 +7,7 @@ TagManager:
   - HealthBar
   - Shot
   - Music
+  - Platform
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,8 @@ public class LevelManager : MonoBehaviour
     public Transform spawnPoint2;
     public Transform spawnPoint3;
     public Transform spawnPoint4;
+    public Transform spawnPoint5;
+    public Transform spawnPoint6;
     public static int spawnPointID = 0;
 
     private Transform tempPoint;

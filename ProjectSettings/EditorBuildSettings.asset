@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grasslands/GL2.unity
     guid: 6e98b9aa6338a814692e42ae5ee5c3a5
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL3.unity
+    guid: aa642e8fef4c4be46929b481e4be5779
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL4.unity
+    guid: 7894948d8047b55488bffab4507a5cf8
   m_configObjects: {}
