@@ -19,6 +19,8 @@ public class MovingPlatform : MonoBehaviour
     public float moveTime;
     private float timeLeft;
 
+    private Vector3 startPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,8 @@ public class MovingPlatform : MonoBehaviour
 
         movingRight = startRight;
         movingUp = startUp;
+
+        startPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -53,5 +57,12 @@ public class MovingPlatform : MonoBehaviour
         else trueY = -ySpeed;
 
         rigidbody2D.velocity = new Vector2(trueX, trueY);
+    }
+
+
+    void OnDisable()
+    {
+        transform.position = startPosition;
+        rigidbody2D.velocity = new Vector2(0f, 0f);
     }
 }

@@ -9,12 +9,6 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
 
     private Transform spawnPointFinal;
-    public Transform spawnPoint1;
-    public Transform spawnPoint2;
-    public Transform spawnPoint3;
-    public Transform spawnPoint4;
-    public Transform spawnPoint5;
-    public Transform spawnPoint6;
     public static int spawnPointID = 0;
 
     private Transform tempPoint;
@@ -28,6 +22,8 @@ public class LevelManager : MonoBehaviour
     public static int currentPrefab = 0;
 
 
+    public List<Transform> listOfSpawnPoints;
+
 
 
     public void Awake()
@@ -35,7 +31,15 @@ public class LevelManager : MonoBehaviour
         instance = this;
 
         spawnPointID = SceneLoader.spawnPoint;
-        switch (spawnPointID)
+        try
+        {
+            spawnPointFinal = listOfSpawnPoints.ToArray()[spawnPointID - 1];
+        }
+        catch(System.IndexOutOfRangeException e)
+        {
+            spawnPointFinal = listOfSpawnPoints.ToArray()[0];
+        }
+        /*switch (spawnPointID)
         {
             case 1:
                 spawnPointFinal = spawnPoint1;
@@ -58,7 +62,7 @@ public class LevelManager : MonoBehaviour
             default:
                 spawnPointFinal = spawnPoint1;
                 break;
-        }
+        }*/
 
 
         SwapPrefab(currentPrefab);

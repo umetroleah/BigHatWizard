@@ -6491,9 +6491,9 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
-    m_Style: 1
+    m_Style: 0
     m_Time: 2
     m_CustomCurve:
       serializedVersion: 2
@@ -8063,12 +8063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4a79c290b1b4440b67798c8a007fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint1: {fileID: 1012567678}
-  spawnPoint2: {fileID: 885328753}
-  spawnPoint3: {fileID: 0}
-  spawnPoint4: {fileID: 0}
-  spawnPoint5: {fileID: 0}
-  spawnPoint6: {fileID: 0}
   playerPrefab: {fileID: 2855060741562786906, guid: 8dd71dca97109904fb941cc45c5ee714,
     type: 3}
   vcam: {fileID: 183042476}
@@ -8078,6 +8072,9 @@ MonoBehaviour:
     type: 3}
   icePrefab: {fileID: 6026050828747201139, guid: 73001f754de955a4d91296ef4f5d5fe4,
     type: 3}
+  listOfSpawnPoints:
+  - {fileID: 1012567678}
+  - {fileID: 885328753}
 --- !u!4 &1249000525
 Transform:
   m_ObjectHideFlags: 0
