@@ -30569,7 +30569,7 @@ PrefabInstance:
     - target: {fileID: 8128067775391991617, guid: 57cbd28a0d4284441ba45577b92a79a6,
         type: 3}
       propertyPath: spawnSetter
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8128067775391991630, guid: 57cbd28a0d4284441ba45577b92a79a6,
         type: 3}
