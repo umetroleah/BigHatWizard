@@ -5008,12 +5008,13 @@ MonoBehaviour:
   m_AirControl: 1
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
   m_GroundPositionBack: {fileID: 6026050829934923100}
   m_GroundPositionFront: {fileID: 6026050828957745269}
   m_CeilingPosition: {fileID: 6026050829016130416}
   m_CrouchDisabledCollider: {fileID: 6026050828747201142}
   m_CrouchDisabledTrigger: {fileID: 2587789999214473755}
+  bouncing: 0
   m_FacingRight: 1
   doubleJump: 1
   doubleJumpReady: 1
@@ -5058,7 +5059,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5084,7 +5085,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: -0.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10052,7 +10053,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths: []

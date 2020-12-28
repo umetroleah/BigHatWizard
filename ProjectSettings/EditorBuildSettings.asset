@@ -50,4 +50,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grasslands/GL11.unity
     guid: 188dbf94a71a15742a92ad629bd961c0
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL12.unity
+    guid: b359130629825744b9822c007e87236c
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL13.unity
+    guid: 9c846715a97e0b74a9fc5c35c1be1e65
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL14.unity
+    guid: f9e3eef69c944ef4bbb9cd0e8547a38a
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL15.unity
+    guid: 290f4cd4acd60254f92666afddd93860
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL16.unity
+    guid: f90ff0526b5cdff468430b0dab671a6f
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL17.unity
+    guid: ec74b53b98d87de4d91cbb0c0728c8b7
+  - enabled: 1
+    path: Assets/Scenes/Grasslands/GL18.unity
+    guid: 2044fc641a7129b4aa470b2afdfe2444
   m_configObjects: {}

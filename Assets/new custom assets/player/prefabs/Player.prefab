@@ -255,12 +255,13 @@ MonoBehaviour:
   m_AirControl: 1
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
   m_GroundPositionBack: {fileID: 2855060742759494517}
   m_GroundPositionFront: {fileID: 2855060741924732508}
   m_CeilingPosition: {fileID: 2855060741832826201}
   m_CrouchDisabledCollider: {fileID: 2855060741562786911}
   m_CrouchDisabledTrigger: {fileID: -2894039295049135054}
+  bouncing: 0
   m_FacingRight: 1
   doubleJump: 1
   doubleJumpReady: 1
@@ -305,7 +306,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,7 +332,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 8f9b4c21f7136ab4598c660dce5975e7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: -0.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5299,12 +5300,36 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 2855060741562786911}
+    m_ColliderPaths:
+    - - X: 1874707
+        Y: -1875000
+      - X: 1874707
+        Y: 6875000
+      - X: -1875000
+        Y: 6874707
+      - X: -1874707
+        Y: -1875000
+  - m_Collider: {fileID: 2855060741562787746}
+    m_ColliderPaths:
+    - - X: 1874707
+        Y: -10000000
+      - X: 1874707
+        Y: -1000000
+      - X: -1875000
+        Y: -1000293
+      - X: -1874707
+        Y: -10000000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 0.18744141, y: -1}
+      - {x: 0.18744141, y: 0.6875}
+      - {x: -0.1875, y: 0.6874414}
+      - {x: -0.18744141, y: -1}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!1 &2855060741590370422

@@ -33,7 +33,7 @@ public class InteractionObject : MonoBehaviour
 
 
         //if player is nearby and the interact script was pressed
-        if (Input.GetButtonDown("Interact") && (player.transform.position - this.transform.position).sqrMagnitude < 2 * 2)
+        if (Input.GetButtonDown("Interact") && Mathf.Abs(player.transform.position.x - this.transform.position.x) < 2 && Mathf.Abs(player.transform.position.y - this.transform.position.y) < 2)
         {
             if (canTalk)
             {
@@ -56,7 +56,7 @@ public class InteractionObject : MonoBehaviour
 
 
         //If player walks away or completes the dialog
-        if(opened != null && ((player.transform.position - opened.transform.position).sqrMagnitude > 2 * 2 || !dialogOpen))
+        if(opened != null && ( (Mathf.Abs(player.transform.position.x - this.transform.position.x) > 2 || Mathf.Abs(player.transform.position.y - this.transform.position.y) > 2)   || !dialogOpen))
         {
             if (canTalk)
             {
