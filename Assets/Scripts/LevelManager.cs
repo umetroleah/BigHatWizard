@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     public GameObject icePrefab;
 
     public static int currentPrefab = 0;
+    public float lightLevel = 1f;
 
 
     public List<Transform> listOfSpawnPoints;

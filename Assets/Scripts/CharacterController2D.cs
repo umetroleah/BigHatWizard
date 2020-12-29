@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -58,9 +59,22 @@ public class CharacterController2D : MonoBehaviour
 
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
+
     }
 
-
+    void Start()
+    {
+        //make light brighter if light is too low
+        GameObject lightObject = this.gameObject.transform.GetChild(8).gameObject;
+        if (LevelManager.instance.lightLevel < 0.75f)
+        {
+            lightObject.GetComponent<Light2D>().intensity = 0.75f;
+        }
+        else
+        {
+            lightObject.GetComponent<Light2D>().intensity = 0.2f;
+        }
+    }
 
     private void FixedUpdate()
     {
