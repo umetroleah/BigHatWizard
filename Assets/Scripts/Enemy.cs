@@ -36,6 +36,12 @@ public class Enemy : MonoBehaviour
     {
         ArrayList tempList = new ArrayList();
 
+        if(bgmManager == null)
+        {
+            bgmManager = FindObjectOfType<MusicManager>();
+        }
+
+
         foreach(float[] effect in effects)
         {
             //burn effect

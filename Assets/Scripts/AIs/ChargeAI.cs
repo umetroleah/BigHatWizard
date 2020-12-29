@@ -53,7 +53,7 @@ public class ChargeAI : MonoBehaviour
         if (player != null)
         {
             //If player is nearby and not already charging
-            if ((player.transform.position - this.transform.position).sqrMagnitude < 14 * 14  && !charging)
+            if (Mathf.Abs(player.transform.position.x - this.transform.position.x) < 14 && Mathf.Abs(player.transform.position.y - this.transform.position.y) < 10 && !charging)
             {
                 //Get player direction
                 if(player.transform.position.x > this.transform.position.x)

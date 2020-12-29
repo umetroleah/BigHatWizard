@@ -66,13 +66,21 @@ public class CharacterController2D : MonoBehaviour
     {
         //make light brighter if light is too low
         GameObject lightObject = this.gameObject.transform.GetChild(8).gameObject;
-        if (LevelManager.instance.lightLevel < 0.75f)
+        if (LevelManager.instance.lightLevel < 0.25f)
         {
-            lightObject.GetComponent<Light2D>().intensity = 0.25f;
+            lightObject.GetComponent<Light2D>().intensity = 0.2f;
+        }
+        else if(LevelManager.instance.lightLevel < 0.5f)
+        {
+            lightObject.GetComponent<Light2D>().intensity = 0.1f;
+        }
+        else if (LevelManager.instance.lightLevel < 0.75f)
+        {
+            lightObject.GetComponent<Light2D>().intensity = 0.05f;
         }
         else
         {
-            lightObject.GetComponent<Light2D>().intensity = 0.025f;
+            lightObject.GetComponent<Light2D>().intensity = 0.01f;
         }
     }
 
