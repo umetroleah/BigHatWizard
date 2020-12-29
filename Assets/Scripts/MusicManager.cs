@@ -31,6 +31,11 @@ public class MusicManager : MonoBehaviour
 
     public void ChangeBGM(AudioClip music)
     {
+        if (audioSrc == null)
+        {
+            audioSrc = this.GetComponent<AudioSource>();
+        }
+
         audioSrc.Stop();
         audioSrc.clip = music;
         audioSrc.Play();

@@ -95,6 +95,7 @@ public class ShroomMonster : MonoBehaviour
         }
 
 
+
         var direction = Vector2.zero;
         if (player != null)
         {
@@ -123,6 +124,9 @@ public class ShroomMonster : MonoBehaviour
             if (activeFight)
             {
                 FightLoop();
+            }
+            else if(bgmManager == null){
+                bgmManager = FindObjectOfType<MusicManager>();
             }
         }
     }
