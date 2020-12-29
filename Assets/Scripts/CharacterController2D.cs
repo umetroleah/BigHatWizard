@@ -68,11 +68,11 @@ public class CharacterController2D : MonoBehaviour
         GameObject lightObject = this.gameObject.transform.GetChild(8).gameObject;
         if (LevelManager.instance.lightLevel < 0.75f)
         {
-            lightObject.GetComponent<Light2D>().intensity = 0.75f;
+            lightObject.GetComponent<Light2D>().intensity = 0.25f;
         }
         else
         {
-            lightObject.GetComponent<Light2D>().intensity = 0.2f;
+            lightObject.GetComponent<Light2D>().intensity = 0.025f;
         }
     }
 
