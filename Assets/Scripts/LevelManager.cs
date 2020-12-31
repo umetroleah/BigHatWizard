@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
 
     private Transform spawnPointFinal;
-    public static int spawnPointID = 0;
+    public static int spawnPointID = 1;
 
     private Transform tempPoint;
     public GameObject playerPrefab;

@@ -106,6 +106,10 @@ public class BrokenGolem : MonoBehaviour
             {
                 FightLoop();
             }
+            else if (bgmManager == null)
+            {
+                bgmManager = FindObjectOfType<MusicManager>();
+            }
         }
     }
 
